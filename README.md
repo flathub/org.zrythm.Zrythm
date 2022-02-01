@@ -2,6 +2,12 @@
 
 Flatpak build of [Zrythm](https://www.zrythm.org), a highly automated and intuitive digital audio workstation.
 
+# Install 
+```
+flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+flatpak install org.zrythm.Zrythm//beta
+```
+
 ## Plugins
 
 This package supports Flatpak builds of LV2, LXVST, and VST3 plugins. Plugins not installed as Flatpak cannot be used.
@@ -32,7 +38,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 1. Clone the repo
 ```
-git clone --recurse-submodules https://github.com/vchernin/flathub --branch org.zrythm.Zrythm
+git clone --recurse-submodules https://github.com/flathub/org.zrythm.Zrythm
 cd flathub
 ```
 

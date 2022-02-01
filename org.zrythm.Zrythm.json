@@ -48,7 +48,8 @@
             "build-options": {
                 "env": {
                     "CCACHE_DISABLE": "1"
-                }
+                },
+                "no-debuginfo": true
             },
             "sources": [
                 {
@@ -75,6 +76,9 @@
             "name": "libatomic_ops",
             "buildsystem": "autotools",
             "config-opts": [],
+            "build-options": {
+                "no-debuginfo": true
+            },
             "sources": [
                 {
                     "type": "archive",
@@ -96,6 +100,9 @@
             "name": "bdwgc",
             "buildsystem": "autotools",
             "config-opts": [],
+            "build-options": {
+                "no-debuginfo": true
+            },
             "sources": [
                 {
                     "type": "git",
@@ -118,6 +125,9 @@
                 "/bin",
                 "/lib/libguile-3.0.so.1.2.0-gdb.scm"
             ],
+            "build-options": {
+                "no-debuginfo": true
+            },
             "sources": [
                 {
                     "type": "archive",
@@ -129,6 +139,9 @@
         {
             "name": "libaudec",
             "buildsystem": "meson",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "sources": [
                 {
                     "type": "git",
@@ -151,7 +164,8 @@
                             "NOOPT": "true"
                         }
                     }
-                }
+                },
+                "no-debuginfo": true
             },
             "sources": [
                 {
@@ -168,6 +182,9 @@
                 "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
                 "make PREFIX=/app install"
             ],
+            "build-options": {
+                "no-debuginfo": true
+            },
             "sources": [
                 {
                     "type": "git",
@@ -179,6 +196,9 @@
         {
             "name": "libadwaita",
             "buildsystem": "meson",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "config-opts": [
                 "-Dintrospection=disabled",
                 "-Dgtk_doc=false",
@@ -202,6 +222,9 @@
                 {
                     "name": "pango",
                     "buildsystem": "meson",
+                    "build-options": {
+                        "no-debuginfo": true
+                    },
                     "config-opts": [
                         "-Dtests=false",
                         "-Dbuild-documentation=false"
@@ -222,6 +245,9 @@
                 {
                     "name": "libsass",
                     "buildsystem": "meson",
+                    "build-options": {
+                        "no-debuginfo": true
+                    },
                     "cleanup": [
                         "*"
                     ],
@@ -237,6 +263,9 @@
                 {
                     "name": "sassc",
                     "buildsystem": "meson",
+                    "build-options": {
+                        "no-debuginfo": true
+                    },
                     "cleanup": [
                         "*"
                     ],
@@ -252,6 +281,9 @@
                 {
                     "name": "gtk",
                     "buildsystem": "meson",
+                    "build-options": {
+                        "no-debuginfo": true
+                    },
                     "config-opts": [
                         "-Dbuild-documentation=false",
                         "-Dintrospection=disabled",
@@ -279,7 +311,8 @@
                     "build-options": {
                         "env": {
                             "LIBRARY_PATH": "/app/lib"
-                        }
+                        },
+                        "no-debuginfo": true
                     },
                     "config-opts": [
                         "-Dvapi=false",
@@ -297,6 +330,9 @@
         },
         {
             "name": "libyaml",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "sources": [
                 {
                     "type": "archive",
@@ -308,6 +344,9 @@
         {
             "name": "libcyaml",
             "buildsystem": "simple",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "build-commands": [
                 "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
                 "make PREFIX=/app install"
@@ -324,10 +363,11 @@
         {
             "name": "backtrace",
             "buildsystem": "autotools",
-            "build-options" : {
+            "build-options": {
                 "env": {
                     "CFLAGS": "-fPIC"
-                }
+                },
+                "no-debuginfo": true
             },
             "sources": [
                 {
@@ -343,7 +383,8 @@
                 "env": {
                     "Vamp_CFLAGS": " ",
                     "Vamp_LIBS": " "
-                }
+                },
+                "no-debuginfo": true
             },
             "sources": [
                 {
@@ -372,7 +413,8 @@
                     "REPROC_WARNINGS": "ON",
                     "REPROC_WARNINGS_AS_ERRORS": "ON",
                     "CFLAGS": "-fPIC"
-                }
+                },
+                "no-debuginfo": true
             },
             "sources": [
                 {
@@ -387,6 +429,9 @@
             "name": "breeze-icons",
             "builddir": true,
             "buildsystem": "simple",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "build-commands": [
                 "mkdir -p /app/share/icons/breeze-dark",
                 "cp -r icons-dark/* /app/share/icons/breeze-dark"
@@ -403,6 +448,9 @@
         {
             "name": "lsp-dsp-lib",
             "buildsystem": "simple",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "build-commands": [
                 "make PREFIX=/app config",
                 "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
@@ -417,26 +465,6 @@
             ]
         },
         {
-            "name": "pipewire",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dgstreamer=disabled",
-                "-Dman=disabled",
-                "-Dsystemd=disabled",
-                "-Dudev=disabled",
-                "-Dudevrulesdir=disabled",
-                "-Dsession-managers=['']"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/pipewire/pipewire.git",
-                    "tag": "0.3.43",
-                    "commit": "07724b7aefa8a23a016727b53f4e426ecd63d248"
-                }
-            ]
-        },
-        {
             "name": "zrythm",
             "builddir": true,
             "buildsystem": "meson",
@@ -446,7 +474,8 @@
             "build-options": {
                 "env": {
                     "LIBRARY_PATH": "/app/lib"
-                }
+                },
+                "no-debuginfo": true
             },
             "post-install": [
                 "install -d /app/extensions/Plugins"
@@ -462,7 +491,6 @@
                     }
                 }
             ]
-            
         }
     ]
 }
