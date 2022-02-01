@@ -10,14 +10,10 @@
         "--share=ipc",
         "--device=dri",
         "--socket=x11",
-        
         "--share=network",
-        
         "--socket=pulseaudio",
         "--device=all",
-        
         "--filesystem=home",
-        
         "--filesystem=xdg-run/pipewire-0",
         "--system-talk-name=org.freedesktop.RealtimeKit1"
     ],
@@ -324,7 +320,7 @@
         {
             "name": "backtrace",
             "buildsystem": "autotools",
-            "build-options" : {
+            "build-options": {
                 "env": {
                     "CFLAGS": "-fPIC"
                 }
@@ -455,14 +451,14 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "aeb2ad3d5ae39b336b8b1127d95b840899d629c4",
+                    "commit": "f28c06672078ff8f1be16b2abd2b9ab2560f189f",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v(.*[\\d.]+)$"
-                    }
+                    },
+                    "tag": "v1.0.0-alpha.28.1.3"
                 }
             ]
-            
         }
     ]
 }
