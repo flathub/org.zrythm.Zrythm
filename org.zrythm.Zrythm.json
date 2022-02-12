@@ -41,12 +41,6 @@
     "modules": [
         {
             "name": "vamp-plugin-sdk",
-            "build-options": {
-                "env": {
-                    "CCACHE_DISABLE": "1"
-                },
-                "no-debuginfo": true
-            },
             "sources": [
                 {
                     "type": "archive",
