@@ -10,14 +10,10 @@
         "--share=ipc",
         "--device=dri",
         "--socket=x11",
-        
         "--share=network",
-        
         "--socket=pulseaudio",
         "--device=all",
-        
         "--filesystem=home",
-        
         "--filesystem=xdg-run/pipewire-0",
         "--system-talk-name=org.freedesktop.RealtimeKit1"
     ],
@@ -484,11 +480,12 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "aeb2ad3d5ae39b336b8b1127d95b840899d629c4",
+                    "commit": "dde179ed54f7ae8e9a00167fcb2e373741a1bd22",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v(.*[\\d.]+)$"
-                    }
+                    },
+                    "tag": "v1.0.0-alpha.29.0.1"
                 }
             ]
         }
