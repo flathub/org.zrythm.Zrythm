@@ -2,17 +2,16 @@
 
 Flatpak build of [Zrythm](https://www.zrythm.org), a highly automated and intuitive digital audio workstation.
 
-# Install 
+# Install
 ```
-flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-flatpak install org.zrythm.Zrythm//beta
+flatpak install org.zrythm.Zrythm
 ```
 
 ## Plugins
 
 This package supports Flatpak builds of LV2, LXVST, and VST3 plugins. Plugins not installed as Flatpak cannot be used.
 
-You can install Plugins using GNOME Software. Or, to view a list of installable plugins, run:  
+You can install Plugins using GNOME Software. Or, to view a list of installable plugins, run:
 `flatpak install org.freedesktop.LinuxAudio.Plugins//21.08 -y`
 
 ## JACK Support
@@ -30,7 +29,7 @@ Intended for Zrythm maintainers or experienced users.
 
 Build:
 
-Prerequisites:  
+Prerequisites:
 Assuming you have Flathub installed, along with `flatpak` and `flatpak-builder`.
 ```
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -52,7 +51,7 @@ flatpak-builder --repo=zrythm --force-clean --install-deps-from=flathub --ccache
 flatpak remote-add --user zrythm zrythm --no-gpg-verify
 flatpak install --user zrythm org.zrythm.Zrythm
 ```
-4. Run the Flatpak build 
+4. Run the Flatpak build
 ```
 flatpak run org.zrythm.Zrythm
 ```
