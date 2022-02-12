@@ -41,6 +41,12 @@
     "modules": [
         {
             "name": "vamp-plugin-sdk",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --prefix=/app",
+                "make -j 1 host",
+                "make install"
+            ],
             "sources": [
                 {
                     "type": "archive",
