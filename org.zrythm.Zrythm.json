@@ -8,7 +8,6 @@
     "copy-icon": true,
     "finish-args": [
         "--share=ipc",
-        "--device=dri",
         "--socket=x11",
         "--share=network",
         "--socket=pulseaudio",
