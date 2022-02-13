@@ -460,11 +460,29 @@
             ]
         },
         {
+            "name": "rtaudio",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Djack=disabled",
+                "-Dalsa=disabled"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.2.0.tar.gz",
+                    "sha256": "d6089c214e5dbff136ab21f3f5efc284e93475ebd198c54d4b9b6c44419ef4e6"
+                }
+            ]
+        },
+        {
             "name": "zrythm",
             "builddir": true,
             "buildsystem": "meson",
             "config-opts": [
-                "-Dfor_flathub=true"
+                "-Dfor_flathub=true",
+                "-Djack=disabled",
+                "-Dalsa=disabled",
+                "-Drtaudio=enabled"
             ],
             "build-options": {
                 "env": {
