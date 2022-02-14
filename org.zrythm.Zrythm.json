@@ -497,7 +497,7 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "91b544cd2cb6b509c7bf267cc253f8c0f8adad56",
+                    "commit": "c5e66525112a7b0ab58430e709ef38007f8875ca",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v(.*[\\d.]+)$"
