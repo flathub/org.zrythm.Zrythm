@@ -497,11 +497,12 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "f69f506d5ef95fa42308d84a88b228efe30467ed",
+                    "commit": "6692a4041181f21f435d6edce0557759dc932b3c",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v(.*[\\d.]+)$"
-                    }
+                    },
+                    "tag": "v1.0.0-alpha.29.1.1"
                 }
             ]
         }
