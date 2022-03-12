@@ -480,7 +480,7 @@
             "buildsystem": "meson",
             "config-opts": [
                 "-Dfor_flathub=true",
-                "-Djack=disabled",
+                "-Djack=enabled",
                 "-Dalsa=disabled",
                 "-Drtaudio=enabled"
             ],
