@@ -203,10 +203,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "tag": "1.0.1",
-                    "commit": "b274a0c32c51a92692e3b282f04e88f033ba73b1"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libadwaita/1.1/libadwaita-1.1.0.tar.xz",
+                    "sha256": "aff598803e810cc28266472cf5bf65e5ed5b90bb3523e206b06b14527325010e"
                 }
             ],
             "cleanup": [
@@ -226,10 +225,9 @@
                     ],
                     "sources": [
                         {
-                            "type": "git",
-                            "url": "https://gitlab.gnome.org/GNOME/pango.git",
-                            "tag": "1.50.3",
-                            "commit": "26aadb2508f9022cbfc72e73b558c6791f5d46d9"
+                            "type": "archive",
+                            "url": "https://download.gnome.org/sources/pango/1.50/pango-1.50.6.tar.xz",
+                            "sha256": "a998bcf36881c3ac20495d40bceb304f4eaa9175bd2967c85656434cbdafe86a"
                         }
                     ],
                     "cleanup": [
@@ -289,10 +287,9 @@
                     ],
                     "sources": [
                         {
-                            "type": "git",
-                            "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                            "tag": "4.6.0",
-                            "commit": "70cb61fb7104c76a15bc6494a10e6ff1d470f6d8"
+                            "type": "archive",
+                            "url": "https://download.gnome.org/sources/gtk/4.6/gtk-4.6.2.tar.xz",
+                            "sha256": "ff263af609a50eb76056653592d929459aef4819a444c436f6d52c6f63c1faec"
                         }
                     ],
                     "cleanup": [
@@ -316,8 +313,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://download.gnome.org/sources/gtksourceview/5.2/gtksourceview-5.2.0.tar.xz",
-                            "sha256": "c9b34fa02654f56ce22fa08827d89db4ba81631b2e6d7d31ea65d13c729430e9"
+                            "url": "https://download.gnome.org/sources/gtksourceview/5.4/gtksourceview-5.4.0.tar.xz",
+                            "sha256": "003bc217e670a8ec8aa3aece994b70e70b7d6b8074938adda21718555d84e637"
                         }
                     ]
                 }
