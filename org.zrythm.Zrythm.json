@@ -1,7 +1,7 @@
 {
     "app-id": "org.zrythm.Zrythm",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "zrythm_launch",
     "rename-icon": "zrythm",
@@ -189,138 +189,6 @@
             ]
         },
         {
-            "name": "libadwaita",
-            "buildsystem": "meson",
-            "build-options": {
-                "no-debuginfo": true
-            },
-            "config-opts": [
-                "-Dintrospection=disabled",
-                "-Dgtk_doc=false",
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libadwaita/1.1/libadwaita-1.1.0.tar.xz",
-                    "sha256": "aff598803e810cc28266472cf5bf65e5ed5b90bb3523e206b06b14527325010e"
-                }
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig"
-            ],
-            "modules": [
-                {
-                    "name": "pango",
-                    "buildsystem": "meson",
-                    "build-options": {
-                        "no-debuginfo": true
-                    },
-                    "config-opts": [
-                        "-Dtests=false",
-                        "-Dbuild-documentation=false"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://download.gnome.org/sources/pango/1.50/pango-1.50.6.tar.xz",
-                            "sha256": "a998bcf36881c3ac20495d40bceb304f4eaa9175bd2967c85656434cbdafe86a"
-                        }
-                    ],
-                    "cleanup": [
-                        "/include",
-                        "/bin/pango-*"
-                    ]
-                },
-                {
-                    "name": "libsass",
-                    "buildsystem": "meson",
-                    "build-options": {
-                        "no-debuginfo": true
-                    },
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/lazka/libsass.git",
-                            "branch": "meson",
-                            "commit": "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
-                        }
-                    ]
-                },
-                {
-                    "name": "sassc",
-                    "buildsystem": "meson",
-                    "build-options": {
-                        "no-debuginfo": true
-                    },
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "git",
-                            "url": "https://github.com/lazka/sassc.git",
-                            "branch": "meson",
-                            "commit": "82803377c33247265d779af034eceb5949e78354"
-                        }
-                    ]
-                },
-                {
-                    "name": "gtk",
-                    "buildsystem": "meson",
-                    "build-options": {
-                        "no-debuginfo": true
-                    },
-                    "config-opts": [
-                        "-Dbuild-documentation=false",
-                        "-Dintrospection=disabled",
-                        "-Dgtk_doc=false",
-                        "-Dtests=false",
-                        "-Dexamples=false",
-                        "-Dvapi=false"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://download.gnome.org/sources/gtk/4.6/gtk-4.6.2.tar.xz",
-                            "sha256": "ff263af609a50eb76056653592d929459aef4819a444c436f6d52c6f63c1faec"
-                        }
-                    ],
-                    "cleanup": [
-                        "/include",
-                        "/bin/gtk4-*"
-                    ]
-                },
-                {
-                    "name": "gtksourceview",
-                    "buildsystem": "meson",
-                    "build-options": {
-                        "env": {
-                            "LIBRARY_PATH": "/app/lib"
-                        },
-                        "no-debuginfo": true
-                    },
-                    "config-opts": [
-                        "-Dvapi=false",
-                        "-Dintrospection=disabled"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://download.gnome.org/sources/gtksourceview/5.4/gtksourceview-5.4.0.tar.xz",
-                            "sha256": "003bc217e670a8ec8aa3aece994b70e70b7d6b8074938adda21718555d84e637"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "libyaml",
             "build-options": {
                 "no-debuginfo": true
@@ -468,6 +336,48 @@
                     "type": "archive",
                     "url": "http://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.2.0.tar.gz",
                     "sha256": "d6089c214e5dbff136ab21f3f5efc284e93475ebd198c54d4b9b6c44419ef4e6"
+                }
+            ]
+        },
+        {
+            "name": "sassc",
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/sass/sassc/archive/3.6.2.tar.gz",
+                    "sha256": "608dc9002b45a91d11ed59e352469ecc05e4f58fc1259fc9a9f5b8f0f8348a03"
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "autogen.sh",
+                    "commands": [
+                        "autoreconf -si"
+                    ]
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libsass",
+                    "cleanup": [
+                        "*"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/sass/libsass/archive/3.6.5.tar.gz",
+                            "sha256": "89d8f2c46ae2b1b826b58ce7dde966a176bac41975b82e84ad46b01a55080582"
+                        },
+                        {
+                            "type": "script",
+                            "dest-filename": "autogen.sh",
+                            "commands": [
+                                "autoreconf -si"
+                            ]
+                        }
+                    ]
                 }
             ]
         },
