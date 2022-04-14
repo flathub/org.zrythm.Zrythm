@@ -385,17 +385,16 @@
             "name": "boost",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/include",
-                "mv boost ${FLATPAK_DEST}/include"
-            ],
-            "cleanup": [
-                "/include"
+                "./bootstrap.sh --prefix=${FLATPAK_DEST}",
+                "./b2 -j ${FLATPAK_BUILDER_N_JOBS} headers",
+                "mkdir -p ${FLATPAK_DEST}/include/boost",
+                "cp -r boost/* ${FLATPAK_DEST}/include/boost"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://dl.bintray.com/boostorg/release/1.73.0/source/boost_1_73_0.tar.bz2",
-                    "sha256": "4eb3b8d442b426dc35346235c8733b5ae35ba431690e38c6a8263dce9fcbb402"
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2",
+                    "sha256": "8681f175d4bdb26c52222665793eef08490d7758529330f98d3b29dd0735bccc"
                 }
             ]
         },
