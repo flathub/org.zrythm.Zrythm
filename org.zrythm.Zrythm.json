@@ -382,6 +382,24 @@
             ]
         },
         {
+            "name": "boost",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p ${FLATPAK_DEST}/include",
+                "mv boost ${FLATPAK_DEST}/include"
+            ],
+            "cleanup": [
+                "/include"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://dl.bintray.com/boostorg/release/1.73.0/source/boost_1_73_0.tar.bz2",
+                    "sha256": "4eb3b8d442b426dc35346235c8733b5ae35ba431690e38c6a8263dce9fcbb402"
+                }
+            ]
+        },
+        {
             "name": "zrythm",
             "builddir": true,
             "buildsystem": "meson",
