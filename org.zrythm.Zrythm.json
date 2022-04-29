@@ -399,6 +399,47 @@
             ]
         },
         {
+            "name": "libadwaita",
+            "buildsystem": "meson",
+            "build-options": {
+                "no-debuginfo": true
+            },
+            "config-opts": [
+                "-Dintrospection=disabled",
+                "-Dgtk_doc=false",
+                "-Dtests=false",
+                "-Dexamples=false",
+                "-Dvapi=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libadwaita",
+                    "commit": "b14744cc8290daac7e636fa976efae160bb280b9"
+                }
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ]
+        },
+        {
+            "name": "libpanel",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dvapi=false",
+                "-Dinstall-examples=false",
+                "-Dintrospection=disabled"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/chergert/libpanel",
+                    "commit": "ac8cf86eb402c8877f7766ff13886bdd91519845"
+                }
+            ]
+        },
+        {
             "name": "zrythm",
             "builddir": true,
             "buildsystem": "meson",
