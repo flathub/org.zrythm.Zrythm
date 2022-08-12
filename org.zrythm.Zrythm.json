@@ -415,7 +415,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libadwaita",
-                    "commit": "b14744cc8290daac7e636fa976efae160bb280b9"
+                    "commit": "7387b453a4c93fbb60d68ec009af6f719fe8bab9",
+                    "tag": "1.2.beta"
                 }
             ],
             "cleanup": [
@@ -451,7 +452,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/drobilla/zix",
-                    "commit": "9cdc083d0d88bc222fa04849948fab8a9b4deee0"
+                    "commit": "818ce34b2d553d373b572ba82cb60b7aa1e14224"
                 }
             ]
         },
