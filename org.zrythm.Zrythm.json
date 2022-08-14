@@ -1,5 +1,5 @@
 {
-    "app-id": "org.zrythm.Zrythm",
+    "id": "org.zrythm.Zrythm",
     "runtime": "org.gnome.Platform",
     "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
@@ -40,17 +40,19 @@
     "modules": [
         {
             "name": "vamp-plugin-sdk",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./configure --prefix=/app",
-                "make -j 1 host",
-                "make install"
-            ],
+            "buildsystem": "autotools",
+            "no-parallel-make": true,
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://archive.org/download/vamp-plugin-sdk-2.8.0-source/vamp-plugin-sdk-2.8.0.tar.gz",
-                    "sha256": "dcc96ae894795822398789f251c2c7effa602fc60e9dd6c7a5c5d2e7a513526c"
+                    "type": "git",
+                    "url": "https://github.com/c4dm/vamp-plugin-sdk",
+                    "commit": "67adfc2bf9486912a0fce5123cf54360ea2678bc",
+                    "tag": "vamp-plugin-sdk-v2.10",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^vamp-plugin-sdk-v([\\d.]+)$"
+                    }
+                    
                 }
             ],
             "post-install": [
@@ -68,33 +70,8 @@
         "shared-modules/linux-audio/jack2.json",
         "shared-modules/linux-audio/liblo.json",
         {
-            "name": "libatomic_ops",
-            "buildsystem": "autotools",
-            "config-opts": [],
-            "build-options": {
-                "no-debuginfo": true
-            },
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/ivmai/libatomic_ops/releases/download/v7.6.10/libatomic_ops-7.6.10.tar.gz",
-                    "sha256": "587edf60817f56daf1e1ab38a4b3c729b8e846ff67b4f62a6157183708f099af"
-                }
-            ],
-            "cleanup": [
-                "*.a",
-                "*.la",
-                "/include",
-                "/share/info",
-                "/share/man",
-                "/share/aclocal",
-                "/lib/pkgconfig"
-            ]
-        },
-        {
             "name": "bdwgc",
             "buildsystem": "autotools",
-            "config-opts": [],
             "build-options": {
                 "no-debuginfo": true
             },
@@ -102,7 +79,15 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ivmai/bdwgc.git",
-                    "tag": "v7.6.6"
+                    "commit": "3e1477b72ef4329a196d67b74da4cbe274d04eff",
+                    "tag": "v8.0.6",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/ivmai/bdwgc/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                        "timestamp-query": ".published_at"
+                    }
                 }
             ],
             "cleanup": [
@@ -116,9 +101,10 @@
         },
         {
             "name": "guile",
+            "buildsystem": "autotools",
             "cleanup": [
                 "/bin",
-                "/lib/libguile-3.0.so.1.2.0-gdb.scm"
+                "/lib/libguile-3.0.so.1.5.0-gdb.scm"
             ],
             "build-options": {
                 "no-debuginfo": true
@@ -126,8 +112,47 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/guile/guile-3.0.4.tar.xz",
-                    "sha256": "6b7947dc2e3d115983846a268b8f5753c12fd5547e42fbf2b97d75a3b79f0d31"
+                    "url": "https://ftp.gnu.org/gnu/guile/guile-3.0.8.tar.xz",
+                    "sha256": "daa7060a56f2804e9b74c8d7e7fe8beed12b43aab2789a38585183fcc17b8a13",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1277,
+                        "stable-only": true,
+                        "url-template": "https://ftp.gnu.org/gnu/guile/guile-$version.tar.xz"
+                    }
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libatomic_ops",
+                    "buildsystem": "autotools",
+                    "build-options": {
+                        "no-debuginfo": true
+                    },
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/ivmai/libatomic_ops",
+                            "commit": "4e7aa64539541905baf2e007694210c8d34f43b6",
+                            "tag": "v7.6.12",
+                            "x-checker-data": {
+                                "type": "json",
+                                "url": "https://api.github.com/repos/ivmai/libatomic_ops/releases/latest",
+                                "tag-query": ".tag_name",
+                                "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                                "timestamp-query": ".published_at"
+                            }
+                        }
+                    ],
+                    "cleanup": [
+                        "*.a",
+                        "*.la",
+                        "/include",
+                        "/share/info",
+                        "/share/man",
+                        "/share/aclocal",
+                        "/lib/pkgconfig"
+                    ]
                 }
             ]
         },
@@ -140,8 +165,15 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://git.sr.ht/~alextee/libaudec",
-                    "commit": "46f5aa04316f94bfbfa90d6b3514df54e90f0602"
+                    "url": "https://github.com/zrythm/libaudec",
+                    "commit": "e1003934f0bcc14af44366f1951c2a97a72e4835",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/zrythm/libaudec/commits",
+                        "commit-query": "first( .[].sha )",
+                        "version-query": "first( .[].sha )",
+                        "timestamp-query": "first( .[].commit.committer.date )"
+                    }
                 }
             ]
         },
@@ -164,9 +196,14 @@
             },
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/falkTX/Carla/archive/v2.4.1.tar.gz",
-                    "sha256": "bbb188a672ea8871b11648d36770ba013497d03407ca9c73ed68429016f7536f"
+                    "type": "git",
+                    "url": "https://github.com/falkTX/Carla",
+                    "commit": "6bc9a90ebb1767649d2538108ed4a604ce96dacb",
+                    "tag": "v2.5.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
                 }
             ]
         },
@@ -183,21 +220,16 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/Cyan4973/xxHash/",
-                    "commit": "b1a61dff654af43552b5ee05c737b6fd2a0ee14b"
-                }
-            ]
-        },
-        {
-            "name": "libyaml",
-            "build-options": {
-                "no-debuginfo": true
-            },
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://pyyaml.org/download/libyaml/yaml-0.2.1.tar.gz",
-                    "sha256": "78281145641a080fb32d6e7a87b9c0664d611dcb4d542e90baf731f51cbb59cd"
+                    "url": "https://github.com/Cyan4973/xxHash",
+                    "commit": "35b0373c697b5f160d3db26b1cbb45a0d5ba788c",
+                    "tag": "v0.8.1",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/Cyan4973/xxHash/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                        "timestamp-query": ".published_at"
+                    }
                 }
             ]
         },
@@ -214,9 +246,40 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/tlsa/libcyaml/",
-                    "commit": "499d1e990869455de30a706eb2ee6a2ad60900ab",
-                    "tag": "v1.3.0"
+                    "url": "https://github.com/tlsa/libcyaml",
+                    "commit": "ee6231ff844c7f100e3b4e65fa34ed47f8fb2f49",
+                    "tag": "v1.3.1",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/tlsa/libcyaml/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                        "timestamp-query": ".published_at"
+                    }
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libyaml",
+                    "build-options": {
+                        "no-debuginfo": true
+                    },
+                    "buildsystem": "autotools",
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/yaml/libyaml",
+                            "commit": "2c891fc7a770e8ba2fec34fc6b545c672beb37e6",
+                            "tag": "0.2.5",
+                            "x-checker-data": {
+                                "type": "json",
+                                "url": "https://api.github.com/repos/yaml/libyaml/releases/latest",
+                                "tag-query": ".tag_name",
+                                "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                                "timestamp-query": ".published_at"
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -233,28 +296,35 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ianlancetaylor/libbacktrace",
-                    "commit": "d0f5e95a87a4d3e0a1ed6c069b5dae7cbab3ed2a"
+                    "commit": "8602fda64e78f1f46563220f2ee9f7e70819c51d",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/ianlancetaylor/libbacktrace/commits",
+                        "commit-query": "first( .[].sha )",
+                        "version-query": "first( .[].sha )",
+                        "timestamp-query": "first( .[].commit.committer.date )"
+                    }
                 }
             ]
         },
         {
             "name": "rubberband",
             "build-options": {
-                "env": {
-                    "Vamp_CFLAGS": " ",
-                    "Vamp_LIBS": " "
-                },
                 "no-debuginfo": true
             },
+            "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://code.breakfastquay.com/attachments/download/34/rubberband-1.8.1.tar.bz2",
-                    "sha256": "ff0c63b0b5ce41f937a8a3bc560f27918c5fe0b90c6bc1cb70829b86ada82b75"
+                    "url": "https://breakfastquay.com/files/releases/rubberband-3.0.0.tar.bz2",
+                    "sha256": "df6530b403c8300a23973df22f36f3c263f010d53792063e411f633cebb9ed85",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 4222,
+                        "stable-only": true,
+                        "url-template": "https://breakfastquay.com/files/releases/rubberband-$version.tar.bz2"
+                    }
                 }
-            ],
-            "post-install": [
-                "install -Dm644 -t /app/share/licenses/rubberband COPYING"
             ],
             "cleanup": [
                 "/bin",
@@ -281,7 +351,14 @@
                     "type": "git",
                     "url": "https://github.com/DaanDeMeyer/reproc",
                     "commit": "8aea3aef64c37a7ed0db759a7128a80c2540c808",
-                    "tag": "v14.2.4"
+                    "tag": "v14.2.4",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/DaanDeMeyer/reproc/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                        "timestamp-query": ".published_at"
+                    }
                 }
             ]
         },
@@ -298,10 +375,15 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/KDE/breeze-icons",
-                    "commit": "c8ca52623d49f77fe32dc1bdb400fa16bc4afb06",
-                    "tag": "v5.90.0"
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/frameworks/5.97/breeze-icons-5.97.0.tar.xz",
+                    "sha256": "6eae442282779802c348e91080132d52b0229288cc8793b2aaa6f906e39171a3",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 8762,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/breeze-icons-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -319,8 +401,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/0.5.14/lsp-dsp-lib-0.5.14-src.tar.gz",
-                    "sha256": "781dae54c934bc11c412a7abbea1321e4ea6513ca24327627b8bfbe5fdb49fbd"
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.4/lsp-dsp-lib-src-1.0.4.tar.gz",
+                    "sha256": "7bb5411666af51a7329c8d0f907d00bb25e3ec2ee3e99680353d5f6f5356d962",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"lsp-dsp-lib-src-\" + $version + \".tar.gz\") | .browser_download_url"
+                    }
                 }
             ]
         },
@@ -333,9 +421,17 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "http://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.2.0.tar.gz",
-                    "sha256": "d6089c214e5dbff136ab21f3f5efc284e93475ebd198c54d4b9b6c44419ef4e6"
+                    "type": "git",
+                    "url": "https://github.com/thestk/rtaudio",
+                    "commit": "46b01b5b134f33d8ddc3dab76829d4b1350e0522",
+                    "tag": "5.2.0",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/thestk/rtaudio/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                        "timestamp-query": ".published_at"
+                    }
                 }
             ]
         },
@@ -344,11 +440,20 @@
             "cleanup": [
                 "*"
             ],
+            "buildsystem": "autotools",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/sass/sassc/archive/3.6.2.tar.gz",
-                    "sha256": "608dc9002b45a91d11ed59e352469ecc05e4f58fc1259fc9a9f5b8f0f8348a03"
+                    "type": "git",
+                    "url": "https://github.com/sass/sassc",
+                    "commit": "66f0ef37e7f0ad3a65d2f481eff09d09408f42d0",
+                    "tag": "3.6.2",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/sass/sassc/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                        "timestamp-query": ".published_at"
+                    }
                 },
                 {
                     "type": "script",
@@ -364,11 +469,20 @@
                     "cleanup": [
                         "*"
                     ],
+                    "buildsystem": "autotools",
                     "sources": [
                         {
-                            "type": "archive",
-                            "url": "https://github.com/sass/libsass/archive/3.6.5.tar.gz",
-                            "sha256": "89d8f2c46ae2b1b826b58ce7dde966a176bac41975b82e84ad46b01a55080582"
+                            "type": "git",
+                            "url": "https://github.com/sass/libsass",
+                            "commit": "f6afdbb9288d20d1257122e71d88e53348a53af3",
+                            "tag": "3.6.5",
+                            "x-checker-data": {
+                                "type": "json",
+                                "url": "https://api.github.com/repos/sass/libsass/releases/latest",
+                                "tag-query": ".tag_name",
+                                "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                                "timestamp-query": ".published_at"
+                            }
                         },
                         {
                             "type": "script",
@@ -386,15 +500,60 @@
             "buildsystem": "simple",
             "build-commands": [
                 "./bootstrap.sh --prefix=${FLATPAK_DEST}",
-                "./b2 -j ${FLATPAK_BUILDER_N_JOBS} headers",
-                "mkdir -p ${FLATPAK_DEST}/include/boost",
-                "cp -r boost/* ${FLATPAK_DEST}/include/boost"
+                "./b2 variant=release -j ${FLATPAK_BUILDER_N_JOBS} install"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2",
-                    "sha256": "8681f175d4bdb26c52222665793eef08490d7758529330f98d3b29dd0735bccc"
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.bz2",
+                    "sha256": "1e19565d82e43bc59209a168f5ac899d3ba471d55c7610c677d4ccf2c9c500c0",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 6845,
+                        "stable-only": true,
+                        "url-template": "https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "zix",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dbenchmarks=disabled",
+                "-Dtests=disabled",
+                "-Ddefault_library=static"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.com/drobilla/zix",
+                    "commit": "818ce34b2d553d373b572ba82cb60b7aa1e14224",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
+                        "commit-query": ".id",
+                        "version-query": ".short_id",
+                        "timestamp-query": ".committed_date"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "libpanel",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dvapi=false",
+                "-Dinstall-examples=false",
+                "-Dintrospection=disabled"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/chergert/libpanel",
+                    "commit": "11a83c39014254540015999a262f41a4e0fc7579",
+                    "//": "TODO add x-checker-data when bump to 43 runtime"
+
                 }
             ]
         },
@@ -416,44 +575,17 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libadwaita",
                     "commit": "7387b453a4c93fbb60d68ec009af6f719fe8bab9",
-                    "tag": "1.2.beta"
+                    "tag": "1.2.beta",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libadwaita",
+                        "stable-only": false
+                    }
                 }
             ],
             "cleanup": [
                 "/include",
                 "/lib/pkgconfig"
-            ]
-        },
-        {
-            "name": "libpanel",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dvapi=false",
-                "-Dinstall-examples=false",
-                "-Dintrospection=disabled"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/chergert/libpanel",
-                    "commit": "ac8cf86eb402c8877f7766ff13886bdd91519845"
-                }
-            ]
-        },
-        {
-            "name": "zix",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dbenchmarks=disabled",
-                "-Dtests=disabled",
-                "-Ddefault_library=static"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/drobilla/zix",
-                    "commit": "818ce34b2d553d373b572ba82cb60b7aa1e14224"
-                }
             ]
         },
         {
@@ -480,12 +612,12 @@
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
                     "commit": "ae30202ebfbed68afeac9754366361dfe08f0eb7",
+                    "tag": "v1.0.0-beta.3.1.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
                         "tag-pattern": "^v(.*[\\d.]+)$"
-                    },
-                    "tag": "v1.0.0-beta.3.1.1"
+                    }
                 }
             ]
         }
