@@ -7,3 +7,4 @@ build-dir
 .flatpak
 zrythm
 zrythm.flatpak
+.vscode
