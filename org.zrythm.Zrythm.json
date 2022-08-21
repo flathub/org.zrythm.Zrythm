@@ -52,7 +52,6 @@
                         "type": "git",
                         "tag-pattern": "^vamp-plugin-sdk-v([\\d.]+)$"
                     }
-                    
                 }
             ],
             "post-install": [
@@ -528,7 +527,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "818ce34b2d553d373b572ba82cb60b7aa1e14224",
+                    "commit": "f2fc88e136fc92328b86575fdfed1cc7c7729ef3",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -553,7 +552,6 @@
                     "url": "https://gitlab.gnome.org/chergert/libpanel",
                     "commit": "11a83c39014254540015999a262f41a4e0fc7579",
                     "//": "TODO add x-checker-data when bump to 43 runtime"
-
                 }
             ]
         },
@@ -611,8 +609,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "ae30202ebfbed68afeac9754366361dfe08f0eb7",
-                    "tag": "v1.0.0-beta.3.1.1",
+                    "commit": "71a6aecd217eccd57ce49518308f76734bddb95a",
+                    "tag": "v1.0.0-beta.3.2.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
