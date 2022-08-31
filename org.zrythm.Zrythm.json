@@ -78,8 +78,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ivmai/bdwgc.git",
-                    "commit": "3e1477b72ef4329a196d67b74da4cbe274d04eff",
-                    "tag": "v8.0.6",
+                    "commit": "cd1fbc1dbfd2cc888436944dd2784f39820698d7",
+                    "tag": "v8.2.2",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ivmai/bdwgc/releases/latest",
@@ -132,8 +132,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/ivmai/libatomic_ops",
-                            "commit": "4e7aa64539541905baf2e007694210c8d34f43b6",
-                            "tag": "v7.6.12",
+                            "commit": "7c5a50620b9216e7364c215ecde1120747c3708d",
+                            "tag": "v7.6.14",
                             "x-checker-data": {
                                 "type": "json",
                                 "url": "https://api.github.com/repos/ivmai/libatomic_ops/releases/latest",
@@ -527,7 +527,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "f2fc88e136fc92328b86575fdfed1cc7c7729ef3",
+                    "commit": "16a8597f4d52de948291825698b7d2458998a510",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -609,8 +609,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "71a6aecd217eccd57ce49518308f76734bddb95a",
-                    "tag": "v1.0.0-beta.3.2.1",
+                    "commit": "6b780b5d476247c1e7bc01ce24aef80ac4b3995b",
+                    "tag": "v1.0.0-beta.3.3.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
