@@ -609,8 +609,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "6b780b5d476247c1e7bc01ce24aef80ac4b3995b",
-                    "tag": "v1.0.0-beta.3.3.1",
+                    "commit": "e540acad364dec59032a65b1cf878c2c9b1fe726",
+                    "tag": "v1.0.0-beta.3.3.3",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
