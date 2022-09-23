@@ -548,42 +548,15 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/chergert/libpanel",
-                    "commit": "11a83c39014254540015999a262f41a4e0fc7579",
-                    "//": "TODO add x-checker-data when bump to 43 runtime"
-                }
-            ]
-        },
-        {
-            "name": "libadwaita",
-            "buildsystem": "meson",
-            "build-options": {
-                "no-debuginfo": true
-            },
-            "config-opts": [
-                "-Dintrospection=disabled",
-                "-Dgtk_doc=false",
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libadwaita",
-                    "commit": "7387b453a4c93fbb60d68ec009af6f719fe8bab9",
-                    "tag": "1.2.beta",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libpanel/1.0/libpanel-1.0.alpha.tar.xz",
+                    "sha256": "370b39bf544c65ff732927817ede337cb8a15aa36d7081cdb91b593c040d3195",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "libadwaita",
-                        "stable-only": false
+                        "name": "libpanel",
+                        "stable-only": true
                     }
                 }
-            ],
-            "cleanup": [
-                "/include",
-                "/lib/pkgconfig"
             ]
         },
         {
