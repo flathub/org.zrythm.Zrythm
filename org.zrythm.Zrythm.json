@@ -1,7 +1,7 @@
 {
     "id": "org.zrythm.Zrythm",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "43",
     "sdk": "org.gnome.Sdk",
     "command": "zrythm_launch",
     "rename-icon": "zrythm",
@@ -19,7 +19,7 @@
     "add-extensions": {
         "org.freedesktop.LinuxAudio.Plugins": {
             "directory": "extensions/Plugins",
-            "version": "21.08",
+            "version": "22.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa;dssi;lv2;vst;vst3",
             "subdirectories": true,
