@@ -544,6 +544,7 @@
             "config-opts": [
                 "-Dvapi=false",
                 "-Dinstall-examples=false",
+                "-Ddocs=disabled",
                 "-Dintrospection=disabled"
             ],
             "sources": [
