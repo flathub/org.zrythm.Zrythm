@@ -197,8 +197,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "6bc9a90ebb1767649d2538108ed4a604ce96dacb",
-                    "tag": "v2.5.0",
+                    "commit": "7d23ab72be1f5fc541e919ad98c63f5ee2c9b94c",
+                    "tag": "v2.5.1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -315,8 +315,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://breakfastquay.com/files/releases/rubberband-3.0.0.tar.bz2",
-                    "sha256": "df6530b403c8300a23973df22f36f3c263f010d53792063e411f633cebb9ed85",
+                    "url": "https://breakfastquay.com/files/releases/rubberband-3.1.0.tar.bz2",
+                    "sha256": "b95a76da5cdb3966770c60115ecd838f84061120f884c3bfdc904f75931ec9aa",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4222,
@@ -375,8 +375,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.97/breeze-icons-5.97.0.tar.xz",
-                    "sha256": "6eae442282779802c348e91080132d52b0229288cc8793b2aaa6f906e39171a3",
+                    "url": "https://download.kde.org/stable/frameworks/5.98/breeze-icons-5.98.0.tar.xz",
+                    "sha256": "57ea7d0fe96a520cb63828d0a6f44de92673a81ede4a7f25d8dd6ac760dd7f28",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
@@ -400,8 +400,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.4/lsp-dsp-lib-src-1.0.4.tar.gz",
-                    "sha256": "7bb5411666af51a7329c8d0f907d00bb25e3ec2ee3e99680353d5f6f5356d962",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.7/lsp-dsp-lib-src-1.0.7.tar.gz",
+                    "sha256": "140f3681ee915d46aa8a2b07fed520553c9c548b8ec045fb52ae16fb300526a6",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -527,7 +527,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "afc6ef7e54988fd68f33df21ec2a220e6bfc49f4",
+                    "commit": "a0293511f4d82d7cb800f568ff5c0d82be5c40c7",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -549,8 +549,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libpanel/1.0/libpanel-1.0.alpha.tar.xz",
-                    "sha256": "370b39bf544c65ff732927817ede337cb8a15aa36d7081cdb91b593c040d3195",
+                    "url": "https://download.gnome.org/sources/libpanel/1.0/libpanel-1.0.1.tar.xz",
+                    "sha256": "841b6ab71eb072fd6520023e1f71aac7ff250c66eadfbb17c955da6bf41e2306",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libpanel",
@@ -582,8 +582,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "63fe86cf185fc2f871da2942ba781434c8fb88db",
-                    "tag": "v1.0.0-beta.3.4.1",
+                    "commit": "fe01b5b7cc6ef42ac5186277e00958311ec23c5f",
+                    "tag": "v1.0.0-beta.3.5.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
