@@ -583,8 +583,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "fe01b5b7cc6ef42ac5186277e00958311ec23c5f",
-                    "tag": "v1.0.0-beta.3.5.1",
+                    "commit": "dfc551581db496dcb3c3338a95690d59790ab53a",
+                    "tag": "v1.0.0-beta.3.6.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
