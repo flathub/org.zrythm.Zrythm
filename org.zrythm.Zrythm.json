@@ -197,11 +197,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "7d23ab72be1f5fc541e919ad98c63f5ee2c9b94c",
-                    "tag": "v2.5.1",
+                    "commit": "1671118eb60b8f4ce59a9a7878f878fb0bab6ce3",
                     "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
+                        "type": "json",
+                        "url": "https://api.github.com/repos/falkTX/Carla/commits",
+                        "commit-query": "first( .[].sha )",
+                        "version-query": "first( .[].sha )",
+                        "timestamp-query": "first( .[].commit.committer.date )"
                     }
                 }
             ]
