@@ -375,8 +375,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.98/breeze-icons-5.98.0.tar.xz",
-                    "sha256": "57ea7d0fe96a520cb63828d0a6f44de92673a81ede4a7f25d8dd6ac760dd7f28",
+                    "url": "https://download.kde.org/stable/frameworks/5.99/breeze-icons-5.99.0.tar.xz",
+                    "sha256": "480f699c04382c91997ff954e645f134ee513817bde2799675fa484956cd3cfd",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
@@ -527,7 +527,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "a0293511f4d82d7cb800f568ff5c0d82be5c40c7",
+                    "commit": "98fdc7a3e012c177f23eeee7de7076339860ca3e",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -583,8 +583,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "dfc551581db496dcb3c3338a95690d59790ab53a",
-                    "tag": "v1.0.0-beta.3.6.1",
+                    "commit": "6f4ced3551d341188f13f16be12638fec2e74f23",
+                    "tag": "v1.0.0-beta.3.7.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
