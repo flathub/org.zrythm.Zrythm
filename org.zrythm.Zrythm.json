@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "dc9b58b4cb148f5f38654defe19b1fe2556acc21",
+                    "commit": "3c10dcee953fb2af12eebac5578bc64f266ee0ec",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -317,8 +317,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://breakfastquay.com/files/releases/rubberband-3.1.0.tar.bz2",
-                    "sha256": "b95a76da5cdb3966770c60115ecd838f84061120f884c3bfdc904f75931ec9aa",
+                    "url": "https://breakfastquay.com/files/releases/rubberband-3.1.1.tar.bz2",
+                    "sha256": "a442551fe7d26fb4a54dd1c34178733dc9c76ac9ce051a02325f5cb35d154381",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4222,
@@ -529,7 +529,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "98fdc7a3e012c177f23eeee7de7076339860ca3e",
+                    "commit": "67613373ec117e648d4554458cf2e9d54b9eba00",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -585,8 +585,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "9d19b2f4c1241c6c0efc948339496374bc07f8ac",
-                    "tag": "v1.0.0-beta.3.9.1",
+                    "commit": "fb01740e325289bb267c9dcd5feba49f8affcf85",
+                    "tag": "v1.0.0-beta.3.10.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
