@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "3c10dcee953fb2af12eebac5578bc64f266ee0ec",
+                    "commit": "4495215cb99bdecb060a5e127a7ea704ab829f7b",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -529,7 +529,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "67613373ec117e648d4554458cf2e9d54b9eba00",
+                    "commit": "bd0105f64fb4ed62aae26be82d325ec70066886b",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -552,8 +552,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libpanel/1.0/libpanel-1.0.1.tar.xz",
-                    "sha256": "841b6ab71eb072fd6520023e1f71aac7ff250c66eadfbb17c955da6bf41e2306",
+                    "url": "https://download.gnome.org/sources/libpanel/1.0/libpanel-1.0.2.tar.xz",
+                    "sha256": "a672043a48ae20050097c9a9f9d98f2a73a1ec8547822ae7bba54d3cc88d7fe2",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libpanel",
@@ -585,8 +585,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "fb01740e325289bb267c9dcd5feba49f8affcf85",
-                    "tag": "v1.0.0-beta.3.10.1",
+                    "commit": "52284e73416d321039a4edf2d3bd40e8edac60c1",
+                    "tag": "v1.0.0-beta.4.0.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
