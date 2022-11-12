@@ -594,6 +594,21 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "demo-projects",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mkdir -p ${FLATPAK_DEST}/share/zrythm/templates/demo_zsong01",
+                "cp -r ./* ${FLATPAK_DEST}/share/zrythm/templates/demo_zsong01/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.zrythm.org/demo-projects/demo_zsong01.zip",
+                    "sha256": "bca4afaf63c294cfb2a91a965e1f51e90bea29c3c09b2b3bb164b4330ac29159"
+                }
+            ]
         }
     ]
 }
