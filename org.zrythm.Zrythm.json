@@ -529,7 +529,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "bd0105f64fb4ed62aae26be82d325ec70066886b",
+                    "commit": "843bdfb552544f96acb3e4624c1d551c85bfa759",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -585,8 +585,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "5337817b391f769e4d645616c0b4a2f6d7b4ae62",
-                    "tag": "v1.0.0-beta.4.1.14",
+                    "commit": "92c0125665d3067207dd0d4f22877c89770625b2",
+                    "tag": "v1.0.0-beta.4.2.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
