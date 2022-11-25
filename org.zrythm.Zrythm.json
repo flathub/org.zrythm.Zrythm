@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "4495215cb99bdecb060a5e127a7ea704ab829f7b",
+                    "commit": "aa400535b31c67f4b6c1b28e6e20e4d4f82111a3",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -377,11 +377,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.99/breeze-icons-5.99.0.tar.xz",
-                    "sha256": "480f699c04382c91997ff954e645f134ee513817bde2799675fa484956cd3cfd",
+                    "url": "https://download.kde.org/stable/frameworks/5.100/breeze-icons-5.100.0.tar.xz",
+                    "sha256": "d02c1b6952fddb306ff58f368ffc8d5cbdf0d46afd652c9c56c86020440dcadb",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 8762,
+                        "project-id": 305788,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/breeze-icons-$version.tar.xz"
                     }
@@ -529,7 +529,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "bd0105f64fb4ed62aae26be82d325ec70066886b",
+                    "commit": "577356481bbcb12468bcf669ef7107dfb057b833",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -585,8 +585,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "5337817b391f769e4d645616c0b4a2f6d7b4ae62",
-                    "tag": "v1.0.0-beta.4.1.14",
+                    "commit": "e1c162c14d8b118daaf68a511e41b505b9a4838a",
+                    "tag": "v1.0.0-beta.4.4.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
