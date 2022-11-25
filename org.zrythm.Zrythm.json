@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "4495215cb99bdecb060a5e127a7ea704ab829f7b",
+                    "commit": "aa400535b31c67f4b6c1b28e6e20e4d4f82111a3",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -529,7 +529,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "bd0105f64fb4ed62aae26be82d325ec70066886b",
+                    "commit": "577356481bbcb12468bcf669ef7107dfb057b833",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -585,8 +585,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "5337817b391f769e4d645616c0b4a2f6d7b4ae62",
-                    "tag": "v1.0.0-beta.4.1.14",
+                    "commit": "e1c162c14d8b118daaf68a511e41b505b9a4838a",
+                    "tag": "v1.0.0-beta.4.4.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
