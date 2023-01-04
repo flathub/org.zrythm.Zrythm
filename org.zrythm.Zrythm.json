@@ -523,7 +523,8 @@
             "config-opts": [
                 "-Dbenchmarks=disabled",
                 "-Dtests=disabled",
-                "-Ddefault_library=static"
+                "-Ddefault_library=static",
+                "-Ddocs=disabled"
             ],
             "sources": [
                 {
