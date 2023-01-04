@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "aa400535b31c67f4b6c1b28e6e20e4d4f82111a3",
+                    "commit": "1588f5b3c19fbee435bde5d5c253fdd09c230783",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -297,7 +297,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ianlancetaylor/libbacktrace",
-                    "commit": "8602fda64e78f1f46563220f2ee9f7e70819c51d",
+                    "commit": "da7eff2f37e38136c5a0c8922957b9dfab5483ef",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ianlancetaylor/libbacktrace/commits",
@@ -317,8 +317,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://breakfastquay.com/files/releases/rubberband-3.1.1.tar.bz2",
-                    "sha256": "a442551fe7d26fb4a54dd1c34178733dc9c76ac9ce051a02325f5cb35d154381",
+                    "url": "https://breakfastquay.com/files/releases/rubberband-3.1.2.tar.bz2",
+                    "sha256": "dda7e257b14c59a1f59c5ccc4d6f19412039f77834275955aa0ff511779b98d2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4222,
@@ -377,8 +377,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.100/breeze-icons-5.100.0.tar.xz",
-                    "sha256": "d02c1b6952fddb306ff58f368ffc8d5cbdf0d46afd652c9c56c86020440dcadb",
+                    "url": "https://download.kde.org/stable/frameworks/5.101/breeze-icons-5.101.0.tar.xz",
+                    "sha256": "f9745944a04860d002f3b95df21fe560b6fbd7d515b8a06ec60da63644a018ef",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 305788,
@@ -402,8 +402,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.7/lsp-dsp-lib-src-1.0.7.tar.gz",
-                    "sha256": "140f3681ee915d46aa8a2b07fed520553c9c548b8ec045fb52ae16fb300526a6",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.8/lsp-dsp-lib-src-1.0.8.tar.gz",
+                    "sha256": "ee3e6171d897f1e1caf9cd2f8f3872a11ae5326b5161196b8a90f262d67c7a78",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -506,8 +506,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.bz2",
-                    "sha256": "1e19565d82e43bc59209a168f5ac899d3ba471d55c7610c677d4ccf2c9c500c0",
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2",
+                    "sha256": "71feeed900fbccca04a3b4f2f84a7c217186f28a940ed8b7ed4725986baf99fa",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6845,
@@ -529,7 +529,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "577356481bbcb12468bcf669ef7107dfb057b833",
+                    "commit": "56ec14c4369c591f5efbb500b0829b760bee7800",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -585,8 +585,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "98b7836308a2c0918329f3ce0c3b9a60fe74cc20",
-                    "tag": "v1.0.0-beta.4.5.1",
+                    "commit": "67298d11b409591bf5cabbb4090d2b35f9838c57",
+                    "tag": "v1.0.0-beta.4.5.21",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
