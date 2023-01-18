@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "1588f5b3c19fbee435bde5d5c253fdd09c230783",
+                    "commit": "378cb66ee599f07908627ff245eae5f8030c4988",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -297,7 +297,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ianlancetaylor/libbacktrace",
-                    "commit": "da7eff2f37e38136c5a0c8922957b9dfab5483ef",
+                    "commit": "ad106d5fdd5d960bd33fae1c48a351af567fd075",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ianlancetaylor/libbacktrace/commits",
@@ -377,8 +377,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.101/breeze-icons-5.101.0.tar.xz",
-                    "sha256": "f9745944a04860d002f3b95df21fe560b6fbd7d515b8a06ec60da63644a018ef",
+                    "url": "https://download.kde.org/stable/frameworks/5.102/breeze-icons-5.102.0.tar.xz",
+                    "sha256": "2db3d90a8b9f7cce7314a8f0d6c3c95c6b7976d172ce4ccc4168142ca074e398",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 305788,
@@ -530,7 +530,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "56ec14c4369c591f5efbb500b0829b760bee7800",
+                    "commit": "1521f6628ee43deb09eb9c6d36a8a4efe8f7567c",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -586,8 +586,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "67298d11b409591bf5cabbb4090d2b35f9838c57",
-                    "tag": "v1.0.0-beta.4.5.21",
+                    "commit": "199df15d7a713153f1c5bb9868e12e2326bfbec6",
+                    "tag": "v1.0.0-beta.4.5.51",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
