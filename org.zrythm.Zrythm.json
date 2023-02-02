@@ -111,8 +111,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/guile/guile-3.0.8.tar.xz",
-                    "sha256": "daa7060a56f2804e9b74c8d7e7fe8beed12b43aab2789a38585183fcc17b8a13",
+                    "url": "https://ftp.gnu.org/gnu/guile/guile-3.0.9.tar.xz",
+                    "sha256": "1a2625ac72b2366e95792f3fe758fd2df775b4044a90a4a9787326e66c0d750d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1277,
@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "378cb66ee599f07908627ff245eae5f8030c4988",
+                    "commit": "4151e160f1e9e03412c112fec54b5f1cde4c45de",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -402,8 +402,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.8/lsp-dsp-lib-src-1.0.8.tar.gz",
-                    "sha256": "ee3e6171d897f1e1caf9cd2f8f3872a11ae5326b5161196b8a90f262d67c7a78",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.9/lsp-dsp-lib-src-1.0.9.tar.gz",
+                    "sha256": "a333fb70c92d92366bfb8de8278b97d32e26e4804c4737df6ab565069f63b862",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -530,7 +530,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "1521f6628ee43deb09eb9c6d36a8a4efe8f7567c",
+                    "commit": "c269ac85e42aad72ac685a4953a7167e8378613d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -586,8 +586,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "199df15d7a713153f1c5bb9868e12e2326bfbec6",
-                    "tag": "v1.0.0-beta.4.5.51",
+                    "commit": "e4cd6f96bcf04682839c1a255726e2802731ca63",
+                    "tag": "v1.0.0-beta.4.5.62",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
