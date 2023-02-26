@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "4151e160f1e9e03412c112fec54b5f1cde4c45de",
+                    "commit": "33a142f447925f55d00532933a1f28e9745c13eb",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -377,8 +377,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.102/breeze-icons-5.102.0.tar.xz",
-                    "sha256": "2db3d90a8b9f7cce7314a8f0d6c3c95c6b7976d172ce4ccc4168142ca074e398",
+                    "url": "https://download.kde.org/stable/frameworks/5.103/breeze-icons-5.103.0.tar.xz",
+                    "sha256": "7925d70ef2078316f69b9d26e7b1536844fb1d3c045fc78a2464c54871415abd",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 305788,
@@ -530,7 +530,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "c269ac85e42aad72ac685a4953a7167e8378613d",
+                    "commit": "262d4a1522c38be0588746e874159da5c7bb457d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -586,8 +586,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "e4cd6f96bcf04682839c1a255726e2802731ca63",
-                    "tag": "v1.0.0-beta.4.5.62",
+                    "commit": "753a9d217ac11a60929b00cb8b5ed089687e701b",
+                    "tag": "v1.0.0-beta.4.6.3",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
