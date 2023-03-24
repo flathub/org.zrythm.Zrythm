@@ -1,7 +1,7 @@
 {
     "id": "org.zrythm.Zrythm",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "43",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "zrythm_launch",
     "rename-icon": "zrythm",
