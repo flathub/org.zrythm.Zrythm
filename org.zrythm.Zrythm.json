@@ -132,8 +132,8 @@
                         {
                             "type": "git",
                             "url": "https://github.com/ivmai/libatomic_ops",
-                            "commit": "7c5a50620b9216e7364c215ecde1120747c3708d",
-                            "tag": "v7.6.14",
+                            "commit": "cc8e83a1f25f38054c721a1a7e6f9195104f94a4",
+                            "tag": "v7.8.0",
                             "x-checker-data": {
                                 "type": "json",
                                 "url": "https://api.github.com/repos/ivmai/libatomic_ops/releases/latest",
@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "33a142f447925f55d00532933a1f28e9745c13eb",
+                    "commit": "6cdd0e71a33bd22aacbe5890f17dcdf14606bd68",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -297,7 +297,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ianlancetaylor/libbacktrace",
-                    "commit": "ad106d5fdd5d960bd33fae1c48a351af567fd075",
+                    "commit": "cdb64b688dda93bbbacbc2b1ccf50ce9329d4748",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ianlancetaylor/libbacktrace/commits",
@@ -317,8 +317,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://breakfastquay.com/files/releases/rubberband-3.1.2.tar.bz2",
-                    "sha256": "dda7e257b14c59a1f59c5ccc4d6f19412039f77834275955aa0ff511779b98d2",
+                    "url": "https://breakfastquay.com/files/releases/rubberband-3.2.0.tar.bz2",
+                    "sha256": "7905a9516b5b2138d28ebcab978e7cae3558670d096f812c9688813752e3c119",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4222,
@@ -377,8 +377,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.103/breeze-icons-5.103.0.tar.xz",
-                    "sha256": "7925d70ef2078316f69b9d26e7b1536844fb1d3c045fc78a2464c54871415abd",
+                    "url": "https://download.kde.org/stable/frameworks/5.104/breeze-icons-5.104.0.tar.xz",
+                    "sha256": "ff2dacc3fb6f1c7acd378638329f2e5b5fc4fdb3dab1321716d2d54b32eaae6a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 305788,
@@ -402,8 +402,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.9/lsp-dsp-lib-src-1.0.9.tar.gz",
-                    "sha256": "a333fb70c92d92366bfb8de8278b97d32e26e4804c4737df6ab565069f63b862",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.10/lsp-dsp-lib-src-1.0.10.tar.gz",
+                    "sha256": "899f85b102b103fad5f40d5c21299b69839d8f2482f9d14be27314e42f22b745",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -553,8 +553,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libpanel/1.0/libpanel-1.0.2.tar.xz",
-                    "sha256": "a672043a48ae20050097c9a9f9d98f2a73a1ec8547822ae7bba54d3cc88d7fe2",
+                    "url": "https://download.gnome.org/sources/libpanel/1.2/libpanel-1.2.0.tar.xz",
+                    "sha256": "d9055bbbab9625f3f5ce6d1fd7132eb6ea34a6ba07a87e9938901fb8b31581e2",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libpanel",
@@ -586,8 +586,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "753a9d217ac11a60929b00cb8b5ed089687e701b",
-                    "tag": "v1.0.0-beta.4.6.3",
+                    "commit": "3ba4553bb0ec7a248dbe10634de13cbfcfe7b5c2",
+                    "tag": "v1.0.0-beta.4.7.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
