@@ -197,7 +197,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "6cdd0e71a33bd22aacbe5890f17dcdf14606bd68",
+                    "commit": "7131a918b284219ccec13c26b87978dce4f57737",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -248,8 +248,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tlsa/libcyaml",
-                    "commit": "ee6231ff844c7f100e3b4e65fa34ed47f8fb2f49",
-                    "tag": "v1.3.1",
+                    "commit": "0f25b41812083b095a1a79839e0cc07413eabbe4",
+                    "tag": "v1.4.0",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/tlsa/libcyaml/releases/latest",
@@ -317,8 +317,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://breakfastquay.com/files/releases/rubberband-3.2.0.tar.bz2",
-                    "sha256": "7905a9516b5b2138d28ebcab978e7cae3558670d096f812c9688813752e3c119",
+                    "url": "https://breakfastquay.com/files/releases/rubberband-3.2.1.tar.bz2",
+                    "sha256": "82edacd0c50bfe56a6a85db1fcd4ca3346940ffe02843fc50f8b92f99a97d172",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4222,
@@ -586,8 +586,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "3ba4553bb0ec7a248dbe10634de13cbfcfe7b5c2",
-                    "tag": "v1.0.0-beta.4.7.1",
+                    "commit": "526a271d66f7c74a5a53da60c30c9ae701435d12",
+                    "tag": "v1.0.0-beta.4.8.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
