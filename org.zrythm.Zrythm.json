@@ -68,6 +68,7 @@
         "shared-modules/linux-audio/fftw3f.json",
         "shared-modules/linux-audio/jack2.json",
         "shared-modules/linux-audio/liblo.json",
+        "shared-modules/linux-audio/fluidsynth2.json",
         {
             "name": "bdwgc",
             "buildsystem": "autotools",
@@ -180,7 +181,8 @@
             "name": "carla",
             "buildsystem": "simple",
             "build-commands": [
-                "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
+                "make features",
+                "make PREFIX=/app HAVE_FLUIDSYNTH=true HAVE_LIBMAGIC=true HAVE_LIBLO=true -j $FLATPAK_BUILDER_N_JOBS",
                 "make PREFIX=/app install"
             ],
             "build-options": {
