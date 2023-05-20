@@ -55,7 +55,7 @@
                 }
             ],
             "post-install": [
-                "install -Dm644 -t /app/share/licenses/vamp-plugin-sdk COPYING"
+                "install -Dm644 -t ${FLATPAK_DEST}/share/licenses/vamp-plugin-sdk COPYING"
             ],
             "cleanup": [
                 "/bin",
@@ -182,8 +182,8 @@
             "buildsystem": "simple",
             "build-commands": [
                 "make features",
-                "make PREFIX=/app HAVE_FLUIDSYNTH=true HAVE_LIBMAGIC=true HAVE_LIBLO=true -j $FLATPAK_BUILDER_N_JOBS",
-                "make PREFIX=/app install"
+                "make PREFIX=${FLATPAK_DEST} HAVE_FLUIDSYNTH=true HAVE_LIBMAGIC=true HAVE_LIBLO=true -j $FLATPAK_BUILDER_N_JOBS",
+                "make PREFIX=${FLATPAK_DEST} install"
             ],
             "build-options": {
                 "arch": {
@@ -214,8 +214,8 @@
             "name": "xxHash",
             "buildsystem": "simple",
             "build-commands": [
-                "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
-                "make PREFIX=/app install"
+                "make PREFIX=${FLATPAK_DEST} -j $FLATPAK_BUILDER_N_JOBS",
+                "make PREFIX=${FLATPAK_DEST} install"
             ],
             "build-options": {
                 "no-debuginfo": true
@@ -243,8 +243,8 @@
                 "no-debuginfo": true
             },
             "build-commands": [
-                "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
-                "make PREFIX=/app install"
+                "make PREFIX=${FLATPAK_DEST} -j $FLATPAK_BUILDER_N_JOBS",
+                "make PREFIX=${FLATPAK_DEST} install"
             ],
             "sources": [
                 {
@@ -373,8 +373,8 @@
                 "no-debuginfo": true
             },
             "build-commands": [
-                "mkdir -p /app/share/icons/breeze-dark",
-                "cp -r icons-dark/* /app/share/icons/breeze-dark"
+                "mkdir -p ${FLATPAK_DEST}/share/icons/breeze-dark",
+                "cp -r icons-dark/* ${FLATPAK_DEST}/share/icons/breeze-dark"
             ],
             "sources": [
                 {
@@ -397,9 +397,9 @@
                 "no-debuginfo": true
             },
             "build-commands": [
-                "make PREFIX=/app config",
-                "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
-                "make PREFIX=/app install"
+                "make PREFIX=${FLATPAK_DEST} config",
+                "make PREFIX=${FLATPAK_DEST} -j $FLATPAK_BUILDER_N_JOBS",
+                "make PREFIX=${FLATPAK_DEST} install"
             ],
             "sources": [
                 {
@@ -582,7 +582,7 @@
                 "no-debuginfo": true
             },
             "post-install": [
-                "install -d /app/extensions/Plugins"
+                "install -d ${FLATPAK_DEST}/extensions/Plugins"
             ],
             "sources": [
                 {
