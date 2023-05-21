@@ -55,7 +55,7 @@
                 }
             ],
             "post-install": [
-                "install -Dm644 -t /app/share/licenses/vamp-plugin-sdk COPYING"
+                "install -Dm644 -t ${FLATPAK_DEST}/share/licenses/vamp-plugin-sdk COPYING"
             ],
             "cleanup": [
                 "/bin",
@@ -68,6 +68,7 @@
         "shared-modules/linux-audio/fftw3f.json",
         "shared-modules/linux-audio/jack2.json",
         "shared-modules/linux-audio/liblo.json",
+        "shared-modules/linux-audio/fluidsynth2.json",
         {
             "name": "bdwgc",
             "buildsystem": "autotools",
@@ -180,8 +181,9 @@
             "name": "carla",
             "buildsystem": "simple",
             "build-commands": [
-                "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
-                "make PREFIX=/app install"
+                "make features",
+                "make PREFIX=${FLATPAK_DEST} HAVE_FLUIDSYNTH=true HAVE_LIBMAGIC=true HAVE_LIBLO=true -j $FLATPAK_BUILDER_N_JOBS",
+                "make PREFIX=${FLATPAK_DEST} install"
             ],
             "build-options": {
                 "arch": {
@@ -212,8 +214,8 @@
             "name": "xxHash",
             "buildsystem": "simple",
             "build-commands": [
-                "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
-                "make PREFIX=/app install"
+                "make PREFIX=${FLATPAK_DEST} -j $FLATPAK_BUILDER_N_JOBS",
+                "make PREFIX=${FLATPAK_DEST} install"
             ],
             "build-options": {
                 "no-debuginfo": true
@@ -241,8 +243,8 @@
                 "no-debuginfo": true
             },
             "build-commands": [
-                "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
-                "make PREFIX=/app install"
+                "make PREFIX=${FLATPAK_DEST} -j $FLATPAK_BUILDER_N_JOBS",
+                "make PREFIX=${FLATPAK_DEST} install"
             ],
             "sources": [
                 {
@@ -371,8 +373,8 @@
                 "no-debuginfo": true
             },
             "build-commands": [
-                "mkdir -p /app/share/icons/breeze-dark",
-                "cp -r icons-dark/* /app/share/icons/breeze-dark"
+                "mkdir -p ${FLATPAK_DEST}/share/icons/breeze-dark",
+                "cp -r icons-dark/* ${FLATPAK_DEST}/share/icons/breeze-dark"
             ],
             "sources": [
                 {
@@ -395,9 +397,9 @@
                 "no-debuginfo": true
             },
             "build-commands": [
-                "make PREFIX=/app config",
-                "make PREFIX=/app -j $FLATPAK_BUILDER_N_JOBS",
-                "make PREFIX=/app install"
+                "make PREFIX=${FLATPAK_DEST} config",
+                "make PREFIX=${FLATPAK_DEST} -j $FLATPAK_BUILDER_N_JOBS",
+                "make PREFIX=${FLATPAK_DEST} install"
             ],
             "sources": [
                 {
@@ -552,13 +554,13 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libpanel/1.2/libpanel-1.2.0.tar.xz",
-                    "sha256": "d9055bbbab9625f3f5ce6d1fd7132eb6ea34a6ba07a87e9938901fb8b31581e2",
+                    "type": "git",
+                    "url": "https://git.sr.ht/~alextee/libpanel-detach",
+                    "commit": "86a41374dcb061a5007d24041b42a1823a8abc8d",
+                    "tag": "1.1.0-for-zrythm",
                     "x-checker-data": {
-                        "type": "gnome",
-                        "name": "libpanel",
-                        "stable-only": true
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)-for-zrythm$"
                     }
                 }
             ]
@@ -580,7 +582,7 @@
                 "no-debuginfo": true
             },
             "post-install": [
-                "install -d /app/extensions/Plugins"
+                "install -d ${FLATPAK_DEST}/extensions/Plugins"
             ],
             "sources": [
                 {
