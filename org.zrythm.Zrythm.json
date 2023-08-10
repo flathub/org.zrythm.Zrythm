@@ -404,8 +404,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.13/lsp-dsp-lib-src-1.0.13.tar.gz",
-                    "sha256": "5a9b9a5c23b254f3da34a4f375a80c08a58eca75a14832485d9141c189eca226",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.11/lsp-dsp-lib-src-1.0.11.tar.gz",
+                    "sha256": "be01621e77da14695a9f7c6922ab1bd390b2e15bbe3939f2468296f3b02da6a3",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -426,8 +426,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/thestk/rtaudio",
-                    "commit": "0e11b50a7ba85875d09d60c097092d1d4bd760b2",
-                    "tag": "6.0.0",
+                    "commit": "46b01b5b134f33d8ddc3dab76829d4b1350e0522",
+                    "tag": "5.2.0",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/thestk/rtaudio/releases/latest",
