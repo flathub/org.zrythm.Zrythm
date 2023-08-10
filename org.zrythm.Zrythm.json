@@ -79,8 +79,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ivmai/bdwgc.git",
-                    "commit": "cd1fbc1dbfd2cc888436944dd2784f39820698d7",
-                    "tag": "v8.2.2",
+                    "commit": "d1ff06cc503a74dca0150d5e988f2c93158b0cdf",
+                    "tag": "v8.2.4",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ivmai/bdwgc/releases/latest",
@@ -199,7 +199,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "fdccb45be790393923f75b7a309891254110400a",
+                    "commit": "b4f5eaac40bdeed064335c02fa4d16ce7fc4a67d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -224,8 +224,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Cyan4973/xxHash",
-                    "commit": "35b0373c697b5f160d3db26b1cbb45a0d5ba788c",
-                    "tag": "v0.8.1",
+                    "commit": "bbb27a5efb85b92a0486cf361a8635715a53f6ba",
+                    "tag": "v0.8.2",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/Cyan4973/xxHash/releases/latest",
@@ -250,8 +250,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tlsa/libcyaml",
-                    "commit": "0f25b41812083b095a1a79839e0cc07413eabbe4",
-                    "tag": "v1.4.0",
+                    "commit": "e2bea44c472719daff095541b22b038fa54c274b",
+                    "tag": "v1.4.1",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/tlsa/libcyaml/releases/latest",
@@ -299,7 +299,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ianlancetaylor/libbacktrace",
-                    "commit": "cdb64b688dda93bbbacbc2b1ccf50ce9329d4748",
+                    "commit": "9ae4f4ae4481b1e69d38ed810980d33103544613",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ianlancetaylor/libbacktrace/commits",
@@ -319,8 +319,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://breakfastquay.com/files/releases/rubberband-3.2.1.tar.bz2",
-                    "sha256": "82edacd0c50bfe56a6a85db1fcd4ca3346940ffe02843fc50f8b92f99a97d172",
+                    "url": "https://breakfastquay.com/files/releases/rubberband-3.3.0.tar.bz2",
+                    "sha256": "d9ef89e2b8ef9f85b13ac3c2faec30e20acf2c9f3a9c8c45ce637f2bc95e576c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 4222,
@@ -379,8 +379,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.105/breeze-icons-5.105.0.tar.xz",
-                    "sha256": "2328b09ca0a9d4ca1efb13132995f837d3d30452b50646cbf5d91f6584d8a679",
+                    "url": "https://download.kde.org/stable/frameworks/5.108/breeze-icons-5.108.0.tar.xz",
+                    "sha256": "9e6507ff60f4ef251b175da0e573a44dda505648745e62b5c10f6d2aca30af9c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 305788,
@@ -404,8 +404,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.11/lsp-dsp-lib-src-1.0.11.tar.gz",
-                    "sha256": "be01621e77da14695a9f7c6922ab1bd390b2e15bbe3939f2468296f3b02da6a3",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.13/lsp-dsp-lib-src-1.0.13.tar.gz",
+                    "sha256": "5a9b9a5c23b254f3da34a4f375a80c08a58eca75a14832485d9141c189eca226",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -426,8 +426,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/thestk/rtaudio",
-                    "commit": "46b01b5b134f33d8ddc3dab76829d4b1350e0522",
-                    "tag": "5.2.0",
+                    "commit": "0e11b50a7ba85875d09d60c097092d1d4bd760b2",
+                    "tag": "6.0.0",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/thestk/rtaudio/releases/latest",
@@ -532,7 +532,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "9e966d0f5a11bb43d17a56aab1ed9a43b8c2a112",
+                    "commit": "a5c18d52a5351430d370084f25aaf7d166f7afd5",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -588,8 +588,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "9d52b05848e008e907868e61cb2beb1221f76072",
-                    "tag": "v1.0.0-beta.4.9.1",
+                    "commit": "99492640382ae7b00c86c4f3c1af801431e598d1",
+                    "tag": "v1.0.0-beta.4.10.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
