@@ -546,6 +546,13 @@
         {
             "name": "gtk",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Dbuild-demos=false",
+                "-Ddemos=false",
+                "-Dbuild-testsuite=false",
+                "-Dbuild-examples=false",
+                "-Dbuild-tests=false"
+            ],
             "sources": [
                 {
                     "type": "git",
@@ -565,8 +572,10 @@
             "name": "libadwaita",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dexamples=false",
-                "-Dtests=false"
+                "-Dvapi=false",
+                "-Dgtk_doc=false",
+                "-Dtests=false",
+                "-Dexamples=false"
             ],
             "sources": [
                 {
