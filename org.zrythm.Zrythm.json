@@ -426,8 +426,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/thestk/rtaudio",
-                    "commit": "0e11b50a7ba85875d09d60c097092d1d4bd760b2",
-                    "tag": "6.0.0",
+                    "commit": "b4f04903312e0e0efffbe77655172e0f060dc085",
+                    "tag": "6.0.1",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/thestk/rtaudio/releases/latest",
