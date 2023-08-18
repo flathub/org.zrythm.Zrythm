@@ -38,46 +38,6 @@
         "*.a"
     ],
     "modules": [
-                {
-            "name": "gtk",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "965b3025d97fcc3682b861e32b01c5fdcc684e31",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
-                        "commit-query": ".id",
-                        "version-query": ".short_id",
-                        "timestamp-query": ".committed_date"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "libadwaita",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dexamples=false",
-                "-Dtests=false"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit": "1c2b09bbe12737fd2b107e0816a5b4f57cfc4a16",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
-                        "commit-query": ".id",
-                        "version-query": ".short_id",
-                        "timestamp-query": ".committed_date"
-                    }
-                }
-            ]
-        },
         {
             "name": "vamp-plugin-sdk",
             "buildsystem": "autotools",
@@ -576,6 +536,46 @@
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
+                        "commit-query": ".id",
+                        "version-query": ".short_id",
+                        "timestamp-query": ".committed_date"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "gtk",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gtk.git",
+                    "commit": "965b3025d97fcc3682b861e32b01c5fdcc684e31",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
+                        "commit-query": ".id",
+                        "version-query": ".short_id",
+                        "timestamp-query": ".committed_date"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "libadwaita",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dexamples=false",
+                "-Dtests=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                    "commit": "1c2b09bbe12737fd2b107e0816a5b4f57cfc4a16",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
                         "commit-query": ".id",
                         "version-query": ".short_id",
                         "timestamp-query": ".committed_date"
