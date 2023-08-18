@@ -590,6 +590,52 @@
                         "timestamp-query": ".committed_date"
                     }
                 }
+            ],
+            "modules": [
+                {
+                    "name": "appstream",
+                    "buildsystem": "meson",
+                    "config-opts": [
+                        "-Dstemming=false",
+                        "-Dapidocs=false"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/ximion/appstream/archive/refs/tags/v0.16.2.tar.gz",
+                            "sha256": "9a2ebe660704878ab795470a72cd53049408ddd9da6e9cb45232cf0ed6505660",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 10385,
+                                "url-template": "https://github.com/ximion/appstream/archive/refs/tags/v$version.tar.gz"
+                            }
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "libxmlb",
+                            "buildsystem": "meson",
+                            "config-opts": [
+                                "-Dgtkdoc=false"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/hughsie/libxmlb",
+                                    "commit": "3be2235c9be79c0ece789d3d50c52c15be31829d",
+                                    "tag": "0.3.13",
+                                    "x-checker-data": {
+                                        "type": "json",
+                                        "url": "https://api.github.com/repos/hughsie/libxmlb/releases/latest",
+                                        "tag-query": ".tag_name",
+                                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                                        "timestamp-query": ".published_at"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
