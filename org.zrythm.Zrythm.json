@@ -544,6 +544,101 @@
             ]
         },
         {
+            "name": "gtk",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dbuild-demos=false",
+                "-Ddemos=false",
+                "-Dbuild-testsuite=false",
+                "-Dbuild-examples=false",
+                "-Dbuild-tests=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gtk.git",
+                    "commit": "965b3025d97fcc3682b861e32b01c5fdcc684e31",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
+                        "commit-query": ".id",
+                        "version-query": ".short_id",
+                        "timestamp-query": ".committed_date"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "libadwaita",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dvapi=false",
+                "-Dgtk_doc=false",
+                "-Dtests=false",
+                "-Dexamples=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                    "commit": "1c2b09bbe12737fd2b107e0816a5b4f57cfc4a16",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
+                        "commit-query": ".id",
+                        "version-query": ".short_id",
+                        "timestamp-query": ".committed_date"
+                    }
+                }
+            ],
+            "modules": [
+                {
+                    "name": "appstream",
+                    "buildsystem": "meson",
+                    "config-opts": [
+                        "-Dstemming=false",
+                        "-Dapidocs=false"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/ximion/appstream/archive/refs/tags/v0.16.2.tar.gz",
+                            "sha256": "9a2ebe660704878ab795470a72cd53049408ddd9da6e9cb45232cf0ed6505660",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 10385,
+                                "url-template": "https://github.com/ximion/appstream/archive/refs/tags/v$version.tar.gz"
+                            }
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "libxmlb",
+                            "buildsystem": "meson",
+                            "config-opts": [
+                                "-Dgtkdoc=false"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "git",
+                                    "url": "https://github.com/hughsie/libxmlb",
+                                    "commit": "3be2235c9be79c0ece789d3d50c52c15be31829d",
+                                    "tag": "0.3.13",
+                                    "x-checker-data": {
+                                        "type": "json",
+                                        "url": "https://api.github.com/repos/hughsie/libxmlb/releases/latest",
+                                        "tag-query": ".tag_name",
+                                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                                        "timestamp-query": ".published_at"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "libpanel",
             "buildsystem": "meson",
             "config-opts": [
