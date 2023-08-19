@@ -401,7 +401,8 @@
             "name": "rtaudio",
             "buildsystem": "meson",
             "build-options": {
-                "no-debuginfo": true
+                "//": "unlike the rest of the modules, this must be set to false, otherwise libcyaml.so.1 cannot be found at runtime",
+                "no-debuginfo": false
             },
             "config-opts": [
                 "-Djack=enabled",
