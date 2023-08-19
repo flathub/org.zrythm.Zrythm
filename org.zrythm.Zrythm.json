@@ -232,8 +232,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tlsa/libcyaml",
-                    "commit": "e2bea44c472719daff095541b22b038fa54c274b",
-                    "tag": "v1.4.1",
+                    "commit": "0f25b41812083b095a1a79839e0cc07413eabbe4",
+                    "tag": "v1.4.0",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/tlsa/libcyaml/releases/latest",
