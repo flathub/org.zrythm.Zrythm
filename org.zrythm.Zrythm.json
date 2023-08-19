@@ -41,6 +41,9 @@
         {
             "name": "vamp-plugin-sdk",
             "buildsystem": "autotools",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "no-parallel-make": true,
             "sources": [
                 {
@@ -418,6 +421,9 @@
         {
             "name": "rtaudio",
             "buildsystem": "meson",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "config-opts": [
                 "-Djack=disabled",
                 "-Dalsa=disabled"
@@ -501,6 +507,9 @@
         {
             "name": "boost",
             "buildsystem": "simple",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "build-commands": [
                 "./bootstrap.sh --prefix=${FLATPAK_DEST}",
                 "./b2 variant=release -j ${FLATPAK_BUILDER_N_JOBS} install"
@@ -522,6 +531,9 @@
         {
             "name": "zix",
             "buildsystem": "meson",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "config-opts": [
                 "-Dbenchmarks=disabled",
                 "-Dtests=disabled",
@@ -546,6 +558,9 @@
         {
             "name": "gtk",
             "buildsystem": "meson",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "config-opts": [
                 "-Dbuild-demos=false",
                 "-Ddemos=false",
@@ -571,6 +586,9 @@
         {
             "name": "libadwaita",
             "buildsystem": "meson",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "config-opts": [
                 "-Dvapi=false",
                 "-Dgtk_doc=false",
@@ -595,6 +613,9 @@
                 {
                     "name": "appstream",
                     "buildsystem": "meson",
+                    "build-options": {
+                        "no-debuginfo": true
+                    },
                     "config-opts": [
                         "-Dstemming=false",
                         "-Dapidocs=false"
@@ -615,6 +636,9 @@
                         {
                             "name": "libxmlb",
                             "buildsystem": "meson",
+                            "build-options": {
+                                "no-debuginfo": true
+                            },
                             "config-opts": [
                                 "-Dgtkdoc=false"
                             ],
@@ -641,6 +665,9 @@
         {
             "name": "libpanel",
             "buildsystem": "meson",
+            "build-options": {
+                "no-debuginfo": true
+            },
             "config-opts": [
                 "-Dvapi=false",
                 "-Dinstall-examples=false",
