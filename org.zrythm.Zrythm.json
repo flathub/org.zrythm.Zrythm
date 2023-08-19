@@ -404,7 +404,7 @@
                 "no-debuginfo": true
             },
             "config-opts": [
-                "-Djack=disabled",
+                "-Djack=enabled",
                 "-Dalsa=disabled"
             ],
             "sources": [
