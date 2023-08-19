@@ -560,7 +560,6 @@
             },
             "config-opts": [
                 "-Dbuild-demos=false",
-                "-Ddemos=false",
                 "-Dbuild-testsuite=false",
                 "-Dbuild-examples=false",
                 "-Dbuild-tests=false"
