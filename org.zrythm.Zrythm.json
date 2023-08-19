@@ -160,27 +160,6 @@
             ]
         },
         {
-            "name": "libaudec",
-            "buildsystem": "meson",
-            "build-options": {
-                "no-debuginfo": true
-            },
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/zrythm/libaudec",
-                    "commit": "e1003934f0bcc14af44366f1951c2a97a72e4835",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://api.github.com/repos/zrythm/libaudec/commits",
-                        "commit-query": "first( .[].sha )",
-                        "version-query": "first( .[].sha )",
-                        "timestamp-query": "first( .[].commit.committer.date )"
-                    }
-                }
-            ]
-        },
-        {
             "name": "carla",
             "buildsystem": "simple",
             "build-commands": [
