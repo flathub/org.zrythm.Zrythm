@@ -587,6 +587,7 @@
             },
             "config-opts": [
                 "-Dvapi=false",
+                "-Dintrospection=disabled",
                 "-Dgtk_doc=false",
                 "-Dtests=false",
                 "-Dexamples=false"
