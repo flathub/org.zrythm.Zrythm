@@ -12,7 +12,7 @@
         "--share=network",
         "--socket=pulseaudio",
         "--device=all",
-        "--filesystem=home",
+        "--filesystem=host",
         "--filesystem=xdg-run/pipewire-0",
         "--system-talk-name=org.freedesktop.RealtimeKit1"
     ],
@@ -21,7 +21,7 @@
             "directory": "extensions/Plugins",
             "version": "22.08",
             "add-ld-path": "lib",
-            "merge-dirs": "ladspa;dssi;lv2;vst;vst3",
+            "merge-dirs": "ladspa;dssi;lv2;clap;vst;vst3",
             "subdirectories": true,
             "no-autodownload": true
         }
@@ -569,7 +569,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "965b3025d97fcc3682b861e32b01c5fdcc684e31",
+                    "commit": "07a92c169074b081051e14f0f386d3c7adcdc737",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
@@ -597,7 +597,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit": "1c2b09bbe12737fd2b107e0816a5b4f57cfc4a16",
+                    "commit": "749a33b047d4f0ea5c38a5decccd0e37a582a4ef",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
@@ -680,7 +680,7 @@
                     "tag": "1.3.0-1-for-zrythm",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^([\\d.]+[-\\d+]?)-for-zrythm$"
+                        "tag-pattern": "^([\\d.-]+)-for-zrythm$"
                     }
                 }
             ]
@@ -708,8 +708,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "8856dd29a18bd1911f7284f0ee6b693cd0e25107",
-                    "tag": "v1.0.0-beta.4.11.1",
+                    "commit": "f6b0d334b4430ed5bbf66962eda87c8287f2f3b9",
+                    "tag": "v1.0.0-beta.4.12.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
