@@ -680,7 +680,7 @@
                     "tag": "1.3.0-1-for-zrythm",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^([\\d.]+[-\\d+]?)-for-zrythm$"
+                        "tag-pattern": "^([\\d.-]+)-for-zrythm$"
                     }
                 }
             ]
