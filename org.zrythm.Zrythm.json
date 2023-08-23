@@ -12,7 +12,7 @@
         "--share=network",
         "--socket=pulseaudio",
         "--device=all",
-        "--filesystem=home",
+        "--filesystem=host",
         "--filesystem=xdg-run/pipewire-0",
         "--system-talk-name=org.freedesktop.RealtimeKit1"
     ],
