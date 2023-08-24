@@ -386,8 +386,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.11/lsp-dsp-lib-src-1.0.11.tar.gz",
-                    "sha256": "be01621e77da14695a9f7c6922ab1bd390b2e15bbe3939f2468296f3b02da6a3",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.14/lsp-dsp-lib-src-1.0.14.tar.gz",
+                    "sha256": "51139ee9d4b1a904868832b9f52fcc4cf6aa78c1573aa935a16ecc96130901dd",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -524,7 +524,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "a5c18d52a5351430d370084f25aaf7d166f7afd5",
+                    "commit": "3d880e00f3a0d7129b642002c3fb51ddbb56ac96",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -569,7 +569,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "07a92c169074b081051e14f0f386d3c7adcdc737",
+                    "commit": "286b4cbc729c55b829c5eeeaa74200e2610fdcf3",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
@@ -597,7 +597,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit": "749a33b047d4f0ea5c38a5decccd0e37a582a4ef",
+                    "commit": "8daf4ccb604b94802d9269455d44d4557ed7989c",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
@@ -621,8 +621,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/ximion/appstream/archive/refs/tags/v0.16.2.tar.gz",
-                            "sha256": "9a2ebe660704878ab795470a72cd53049408ddd9da6e9cb45232cf0ed6505660",
+                            "url": "https://github.com/ximion/appstream/archive/refs/tags/v0.16.3.tar.gz",
+                            "sha256": "4470a27474dc3cc4938552fbf0394b6a65d8a2055d4f4418df086d65d8f2ba29",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 10385,
@@ -644,8 +644,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/hughsie/libxmlb",
-                                    "commit": "3be2235c9be79c0ece789d3d50c52c15be31829d",
-                                    "tag": "0.3.13",
+                                    "commit": "aa577b276adc66564f5777f9a522ca3bf0bfa65e",
+                                    "tag": "0.3.14",
                                     "x-checker-data": {
                                         "type": "json",
                                         "url": "https://api.github.com/repos/hughsie/libxmlb/releases/latest",
@@ -708,8 +708,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "f6b0d334b4430ed5bbf66962eda87c8287f2f3b9",
-                    "tag": "v1.0.0-beta.4.12.1",
+                    "commit": "9940dbf46e6a5f768bca0384b70ec5343d933144",
+                    "tag": "v1.0.0-beta.4.12.5",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
