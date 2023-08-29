@@ -186,7 +186,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "bdb9b076f4c2abd28a67b9b4f165d4742dc941c1",
+                    "commit": "67cc40dcfdc92e5ba861b89d0bd70e710827b31e",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -568,7 +568,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "81821978aec10e417d1317639a9dc8c56981dbc6",
+                    "commit": "67a7602080467d51e67edb79b5aa01ea47ba2e81",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
@@ -596,7 +596,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit": "8daf4ccb604b94802d9269455d44d4557ed7989c",
+                    "commit": "1025b379313a0dbf9430c77115a80d5001ad0149",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
@@ -707,8 +707,8 @@
                 {
                     "type": "git",
                     "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "9940dbf46e6a5f768bca0384b70ec5343d933144",
-                    "tag": "v1.0.0-beta.4.12.5",
+                    "commit": "53a59770694426f882427ee771187586e8c7f17d",
+                    "tag": "v1.0.0-beta.4.12.34",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
