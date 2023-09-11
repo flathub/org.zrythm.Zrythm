@@ -701,9 +701,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://git.sr.ht/~alextee/zrythm",
-                    "commit": "53a59770694426f882427ee771187586e8c7f17d",
-                    "tag": "v1.0.0-beta.4.12.34",
+                    "url": "https://github.com/zrythm/zrythm",
+                    "commit": "e20dc3b8cfa42f9018add9bf8e3f0be6f43856d6",
+                    "tag": "v1.0.0-beta.4.13.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
