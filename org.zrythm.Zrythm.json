@@ -181,7 +181,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "67cc40dcfdc92e5ba861b89d0bd70e710827b31e",
+                    "commit": "dd092c74aa28f626108f6d3a52c565cb9047d32d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -361,8 +361,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.109/breeze-icons-5.109.0.tar.xz",
-                    "sha256": "e07a0be85f4fe67576204339be9ac9c6809618b16963fb147d59a325380c54b2",
+                    "url": "https://download.kde.org/stable/frameworks/5.110/breeze-icons-5.110.0.tar.xz",
+                    "sha256": "1a3ced17ac34f7b7cb165017e6ceee71a0184a645ff962ace39bc69dcf43bfd4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 305788,
@@ -563,7 +563,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "67a7602080467d51e67edb79b5aa01ea47ba2e81",
+                    "commit": "713a5188cfdf0d67b2d060789e285a8bb9440040",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
@@ -591,7 +591,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit": "1025b379313a0dbf9430c77115a80d5001ad0149",
+                    "commit": "9ddd0e23fdf234c4ad3a2a98a2944027b16260d8",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
@@ -702,8 +702,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "e20dc3b8cfa42f9018add9bf8e3f0be6f43856d6",
-                    "tag": "v1.0.0-beta.4.13.1",
+                    "commit": "d58d9a94f9495bda62287ba863a94fed12410ec2",
+                    "tag": "v1.0.0-beta.4.13.6",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
