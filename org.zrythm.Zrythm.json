@@ -561,15 +561,13 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "e4af2c4d80fd9cd9d4fcef14a467b8ddd4f97624",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.0.tar.xz",
+                    "sha256": "0e2e928a271ac5ef9c95d891a2b9a8c46df9598d12efd9ccfa31695e88cab6aa",
                     "x-checker-data": {
-                        "type": "json",
-                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
-                        "commit-query": ".id",
-                        "version-query": ".short_id",
-                        "timestamp-query": ".committed_date"
+                        "type": "gnome",
+                        "name": "gtk",
+                        "stable-only": false
                     }
                 }
             ]
@@ -589,15 +587,13 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit": "82641b758839165f6d03174430c209c070347e6a",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.0.tar.xz",
+                    "sha256": "e51a098a54d43568218fc48fcf52e80e36f469b3ce912d8ce9c308a37e9f47c2",
                     "x-checker-data": {
-                        "type": "json",
-                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
-                        "commit-query": ".id",
-                        "version-query": ".short_id",
-                        "timestamp-query": ".committed_date"
+                        "type": "gnome",
+                        "name": "libadwaita",
+                        "stable-only": false
                     }
                 }
             ],
