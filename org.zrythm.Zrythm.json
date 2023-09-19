@@ -386,8 +386,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.11/lsp-dsp-lib-src-1.0.11.tar.gz",
-                    "sha256": "be01621e77da14695a9f7c6922ab1bd390b2e15bbe3939f2468296f3b02da6a3"
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.16/lsp-dsp-lib-src-1.0.16.tar.gz",
+                    "sha256": "9b0e11daa8c9ca5970f18e503f1be430044bf812a116cf73389ab1bba503f186",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"lsp-dsp-lib-src-\" + $version + \".tar.gz\") | .browser_download_url"
+                    }
                 }
             ]
         },
@@ -561,15 +567,13 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "commit": "e4af2c4d80fd9cd9d4fcef14a467b8ddd4f97624",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.0.tar.xz",
+                    "sha256": "0e2e928a271ac5ef9c95d891a2b9a8c46df9598d12efd9ccfa31695e88cab6aa",
                     "x-checker-data": {
-                        "type": "json",
-                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Fgtk/repository/commits/main",
-                        "commit-query": ".id",
-                        "version-query": ".short_id",
-                        "timestamp-query": ".committed_date"
+                        "type": "gnome",
+                        "name": "gtk",
+                        "stable-only": false
                     }
                 }
             ]
@@ -589,15 +593,13 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit": "82641b758839165f6d03174430c209c070347e6a",
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.0.tar.xz",
+                    "sha256": "e51a098a54d43568218fc48fcf52e80e36f469b3ce912d8ce9c308a37e9f47c2",
                     "x-checker-data": {
-                        "type": "json",
-                        "url": "https://gitlab.gnome.org/api/v4/projects/gnome%2Flibadwaita/repository/commits/main",
-                        "commit-query": ".id",
-                        "version-query": ".short_id",
-                        "timestamp-query": ".committed_date"
+                        "type": "gnome",
+                        "name": "libadwaita",
+                        "stable-only": false
                     }
                 }
             ],
