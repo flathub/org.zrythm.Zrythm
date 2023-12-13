@@ -682,6 +682,22 @@
             ]
         },
         {
+            "name": "yyjson",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/ibireme/yyjson",
+                    "commit": "e01ae9d89eaf858894d366169329097171a28d67",
+                    "tag": "0.8.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
             "name": "zrythm",
             "builddir": true,
             "buildsystem": "meson",
