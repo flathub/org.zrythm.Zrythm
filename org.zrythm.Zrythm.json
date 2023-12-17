@@ -8,6 +8,7 @@
     "copy-icon": true,
     "finish-args": [
         "--share=ipc",
+        "--socket=wayland",
         "--socket=x11",
         "--share=network",
         "--socket=pulseaudio",
