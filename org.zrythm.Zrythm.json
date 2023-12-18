@@ -618,8 +618,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/ximion/appstream/archive/refs/tags/v1.0.0.tar.gz",
-                            "sha256": "e964fea8b4b7efac7976dc13da856421ddec4299acb5012a7c059f03eabcbeae",
+                            "url": "https://github.com/ximion/appstream/archive/refs/tags/v1.0.1.tar.gz",
+                            "sha256": "3a6877c887627aed515e9802f63ac7bd83fffab4c2cad33c809c692c4bd8da48",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 10385,
@@ -721,8 +721,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "ac5256c79dfd64118612c4ceb44c7a8210c014a2",
-                    "tag": "v1.0.0-beta.5.1.1",
+                    "commit": "721a08cc7a5bb7d15a6fb08237771ebc1311416a",
+                    "tag": "v1.0.0-beta.5.2.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
