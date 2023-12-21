@@ -387,8 +387,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.19/lsp-dsp-lib-src-1.0.19.tar.gz",
-                    "sha256": "541e3c50c10035985e98a9a4772dc76bf8588b7187747e1fa5cd2692d1ded28d",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.20/lsp-dsp-lib-src-1.0.20.tar.gz",
+                    "sha256": "5000ed31aa6c1dbd3cc923acbb46c66975cf540c99e02711402f3404d869a1a4",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -721,8 +721,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "721a08cc7a5bb7d15a6fb08237771ebc1311416a",
-                    "tag": "v1.0.0-beta.5.2.1",
+                    "commit": "0427797f939c7768869c08349b3bc85d90bc76f4",
+                    "tag": "v1.0.0-beta.5.3.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
