@@ -182,7 +182,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "c2031edc1c82c3e760394b6363627caf25a7c256",
+                    "commit": "84e2e0a4beee64297e3e33c9cb58448cb2fdbd73",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -525,7 +525,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "08954c900820320064d2e33445858e1ef5024a0b",
+                    "commit": "df4674400428ff3fc03c08534a99cfbd3bb54f91",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -569,8 +569,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.3.tar.xz",
-                    "sha256": "4f04a43e7c287360473f34fc27b629f64875795f3bc7ec2781df449c5e72f312",
+                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.5.tar.xz",
+                    "sha256": "4a95225815ff6ecfcfe9b7905eba38f84f53b61cec909a490cf29e227b41e418",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gtk",
@@ -641,8 +641,8 @@
                                 {
                                     "type": "git",
                                     "url": "https://github.com/hughsie/libxmlb",
-                                    "commit": "aa577b276adc66564f5777f9a522ca3bf0bfa65e",
-                                    "tag": "0.3.14",
+                                    "commit": "25a6384ad60f7e8550292e6cb4f262cc5da74be4",
+                                    "tag": "0.3.15",
                                     "x-checker-data": {
                                         "type": "json",
                                         "url": "https://api.github.com/repos/hughsie/libxmlb/releases/latest",
@@ -721,8 +721,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "2802989a03db163dfbfd87ae4c3fef5f19baa749",
-                    "tag": "v1.0.0-beta.6.0.1",
+                    "commit": "5ad840a0bcef8f1a284b69a9ba4ae50670bbe2f2",
+                    "tag": "v1.0.0-beta.6.0.26",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
