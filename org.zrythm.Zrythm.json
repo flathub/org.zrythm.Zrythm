@@ -70,7 +70,6 @@
         "shared-modules/linux-audio/lv2.json",
         "shared-modules/linux-audio/lilv.json",
         "shared-modules/linux-audio/fftw3f.json",
-        "shared-modules/linux-audio/jack2.json",
         "shared-modules/linux-audio/liblo.json",
         "shared-modules/linux-audio/fluidsynth2.json",
         {
