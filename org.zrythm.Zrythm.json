@@ -564,7 +564,8 @@
                 "-Dbuild-demos=false",
                 "-Dbuild-testsuite=false",
                 "-Dbuild-examples=false",
-                "-Dbuild-tests=false"
+                "-Dbuild-tests=false",
+                "-Dvulkan=disabled"
             ],
             "sources": [
                 {
