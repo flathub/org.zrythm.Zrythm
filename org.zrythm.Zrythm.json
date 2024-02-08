@@ -82,8 +82,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ivmai/bdwgc.git",
-                    "commit": "d1ff06cc503a74dca0150d5e988f2c93158b0cdf",
-                    "tag": "v8.2.4",
+                    "commit": "e340b2e869e02718de9c9d7fa440ef4b35785388",
+                    "tag": "v8.2.6",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ivmai/bdwgc/releases/latest",
@@ -181,7 +181,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "84e2e0a4beee64297e3e33c9cb58448cb2fdbd73",
+                    "commit": "1e3b910d014f7f7d44e8b3b76eb47efad2121e4f",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -569,8 +569,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.5.tar.xz",
-                    "sha256": "4a95225815ff6ecfcfe9b7905eba38f84f53b61cec909a490cf29e227b41e418",
+                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.6.tar.xz",
+                    "sha256": "9adc386caa205724fc5e4866775797902ff6ead7d2b3720d613dd80c2f6aae77",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gtk",
@@ -721,8 +721,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "cd60bca9bf05eb48287afaf5a9552da8fe098ad9",
-                    "tag": "v1.0.0-beta.6.2.1",
+                    "commit": "bbc4bf4a6fdd8fdf197518882f4360da8a5df2ea",
+                    "tag": "v1.0.0-beta.6.3.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
