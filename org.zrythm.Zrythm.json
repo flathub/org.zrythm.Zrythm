@@ -721,8 +721,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "bbc4bf4a6fdd8fdf197518882f4360da8a5df2ea",
-                    "tag": "v1.0.0-beta.6.3.1",
+                    "commit": "26d47fe22e090ba30687dbd4566dd97c7a0575c8",
+                    "tag": "v1.0.0-beta.6.3.11",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
