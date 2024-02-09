@@ -595,8 +595,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libadwaita/1.4/libadwaita-1.4.2.tar.xz",
-                    "sha256": "33fa16754e7370c841767298b3ff5f23003ee1d2515cc2ff255e65ef3d4e8713",
+                    "url": "https://download.gnome.org/sources/libadwaita/1.5/libadwaita-1.5.beta.tar.xz",
+                    "sha256": "0aaf5eff76321977c1a592de05e3a0e9dffb9cc60eaac1dd8830c04fed484dfe",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libadwaita",
@@ -721,8 +721,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "26d47fe22e090ba30687dbd4566dd97c7a0575c8",
-                    "tag": "v1.0.0-beta.6.3.11",
+                    "commit": "538616814ffa90688abc96f7f64f901240209828",
+                    "tag": "v1.0.0-beta.6.3.13",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
