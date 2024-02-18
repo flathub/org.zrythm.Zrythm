@@ -4,8 +4,6 @@
     "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "zrythm_launch",
-    "rename-icon": "zrythm",
-    "copy-icon": true,
     "finish-args": [
         "--share=ipc",
         "--socket=wayland",
