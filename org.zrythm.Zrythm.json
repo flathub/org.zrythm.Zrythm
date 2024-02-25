@@ -181,7 +181,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "1e3b910d014f7f7d44e8b3b76eb47efad2121e4f",
+                    "commit": "0b250a0cb73e4967ca9db0e2065b430c0530c128",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -569,8 +569,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.6.tar.xz",
-                    "sha256": "9adc386caa205724fc5e4866775797902ff6ead7d2b3720d613dd80c2f6aae77",
+                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.8.tar.xz",
+                    "sha256": "708a8bf24c41c326dc4ef466a638663351c59fddc98eb463dba3cedaa3708d90",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gtk",
@@ -618,8 +618,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/ximion/appstream/archive/refs/tags/v1.0.1.tar.gz",
-                            "sha256": "3a6877c887627aed515e9802f63ac7bd83fffab4c2cad33c809c692c4bd8da48",
+                            "url": "https://github.com/ximion/appstream/archive/refs/tags/v1.0.2.tar.gz",
+                            "sha256": "77e271f47167ae37a68111b951c3c07e4261579e69047747044f7924c8219d14",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 10385,
@@ -721,8 +721,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "882fc0d2c91ac68016ceffd7fb6c4cfc96694943",
-                    "tag": "v1.0.0-beta.6.3.18",
+                    "commit": "ad80aa73aa843e520d93f4982c8c04bcfeee0595",
+                    "tag": "v1.0.0-beta.6.4.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
