@@ -5,7 +5,6 @@
     "sdk": "org.gnome.Sdk",
     "command": "zrythm_launch",
     "rename-icon": "org.zrythm.Zrythm",
-    "copy-icon": true,
     "finish-args": [
         "--share=ipc",
         "--socket=wayland",
