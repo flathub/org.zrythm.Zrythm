@@ -4,7 +4,7 @@
     "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "zrythm_launch",
-    "rename-icon": "zrythm",
+    "rename-icon": "org.zrythm.Zrythm",
     "copy-icon": true,
     "finish-args": [
         "--share=ipc",
