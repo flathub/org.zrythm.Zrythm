@@ -180,7 +180,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "fe8631bc13a507507ccc6b5c408d5a4a880b1936",
+                    "commit": "66afe24a08790732cc17d81d4b846a1e0cfa0118",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -280,7 +280,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ianlancetaylor/libbacktrace",
-                    "commit": "36cfdc18ed1fea1132cc4145e32b3645fcfb132b",
+                    "commit": "7ead8c1ea2f4aeafe9c5b9ef8a9461a9ba781aa8",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ianlancetaylor/libbacktrace/commits",
@@ -385,8 +385,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.20/lsp-dsp-lib-src-1.0.20.tar.gz",
-                    "sha256": "5000ed31aa6c1dbd3cc923acbb46c66975cf540c99e02711402f3404d869a1a4",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.21/lsp-dsp-lib-src-1.0.21.tar.gz",
+                    "sha256": "507b5c747479439b5b0244585aa533e0939bca42f9c7e74d6a808095461a3a07",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -523,7 +523,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "df4674400428ff3fc03c08534a99cfbd3bb54f91",
+                    "commit": "8ff1b1f0bbb788034671f2e269826f5552035424",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -568,8 +568,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtk/4.13/gtk-4.13.8.tar.xz",
-                    "sha256": "708a8bf24c41c326dc4ef466a638663351c59fddc98eb463dba3cedaa3708d90",
+                    "url": "https://download.gnome.org/sources/gtk/4.14/gtk-4.14.1.tar.xz",
+                    "sha256": "fcefb3f132f8cc4711a9efa5b353c9ae9bb5eeff0246fa74dbc2f2f839b9e308",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gtk",
@@ -594,8 +594,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libadwaita/1.5/libadwaita-1.5.beta.tar.xz",
-                    "sha256": "0aaf5eff76321977c1a592de05e3a0e9dffb9cc60eaac1dd8830c04fed484dfe",
+                    "url": "https://download.gnome.org/sources/libadwaita/1.5/libadwaita-1.5.0.tar.xz",
+                    "sha256": "fd92287df9bb95c963654fb6e70d3e082e2bcb37b147e0e3c905567167993783",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libadwaita",
@@ -720,8 +720,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "0ef30e12f53f981a612fa102b566e2eb6d8018c3",
-                    "tag": "v1.0.0-beta.6.5.1",
+                    "commit": "4937ee8abe4f7ab2a12907c2fa2f0935a0a68f2d",
+                    "tag": "v1.0.0-beta.6.6.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
