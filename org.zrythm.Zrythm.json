@@ -180,7 +180,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "66afe24a08790732cc17d81d4b846a1e0cfa0118",
+                    "commit": "3c7d0e7b914d38a32b733cc5ced0b5696d2f9a03",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -334,8 +334,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/DaanDeMeyer/reproc",
-                    "commit": "8aea3aef64c37a7ed0db759a7128a80c2540c808",
-                    "tag": "v14.2.4",
+                    "commit": "3179928ae7b085e41dfb846d987519fa7c12ffb3",
+                    "tag": "v14.2.5",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/DaanDeMeyer/reproc/releases/latest",
@@ -616,8 +616,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "4937ee8abe4f7ab2a12907c2fa2f0935a0a68f2d",
-                    "tag": "v1.0.0-beta.6.6.1",
+                    "commit": "d3ad381408e77da00465e79fa79f2d012d60a5b7",
+                    "tag": "v1.0.0-beta.6.7.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
