@@ -180,7 +180,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "862c1ec129111f25a3af972851f8adb0a102b521",
+                    "commit": "dfc7a12afa17f4025dcd933a71079af8b4aaa0e7",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -616,8 +616,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "36e2f2b7ddbef62b05e4266d86046601bf764e98",
-                    "tag": "v1.0.0-rc.0",
+                    "commit": "8d4e2e1ddba5f77dac6bdfc0b53846f0a578e793",
+                    "tag": "v1.0.0-rc.1",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
