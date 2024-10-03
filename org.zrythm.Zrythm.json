@@ -81,8 +81,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ivmai/bdwgc.git",
-                    "commit": "e340b2e869e02718de9c9d7fa440ef4b35785388",
-                    "tag": "v8.2.6",
+                    "commit": "ee59af3722e56de8404de6cd0c21c2493cc4d855",
+                    "tag": "v8.2.8",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ivmai/bdwgc/releases/latest",
@@ -180,7 +180,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/falkTX/Carla",
-                    "commit": "dfc7a12afa17f4025dcd933a71079af8b4aaa0e7",
+                    "commit": "e312817b6f3d95e928dfde119934e7657092e7cc",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/falkTX/Carla/commits",
@@ -231,8 +231,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tlsa/libcyaml",
-                    "commit": "e2bea44c472719daff095541b22b038fa54c274b",
-                    "tag": "v1.4.1",
+                    "commit": "d05365e474e56d34c8d4b25599a333c0635eeebf",
+                    "tag": "v1.4.2",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/tlsa/libcyaml/releases/latest",
@@ -280,7 +280,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ianlancetaylor/libbacktrace",
-                    "commit": "7ead8c1ea2f4aeafe9c5b9ef8a9461a9ba781aa8",
+                    "commit": "86885d14049fab06ef8a33aac51664230ca09200",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/ianlancetaylor/libbacktrace/commits",
@@ -385,8 +385,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.21/lsp-dsp-lib-src-1.0.21.tar.gz",
-                    "sha256": "507b5c747479439b5b0244585aa533e0939bca42f9c7e74d6a808095461a3a07",
+                    "url": "https://github.com/lsp-plugins/lsp-dsp-lib/releases/download/1.0.25/lsp-dsp-lib-src-1.0.25.tar.gz",
+                    "sha256": "b9750dcd5a7b415222161eae8534f612ecca9aef489f3e2b9343773a43cd04c1",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/lsp-plugins/lsp-dsp-lib/releases/latest",
@@ -496,8 +496,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.bz2",
-                    "sha256": "7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617",
+                    "url": "https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.bz2",
+                    "sha256": "1bed88e40401b2cb7a1f76d4bab499e352fa4d0c5f31c0dbae64e24d34d7513b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 6845,
@@ -523,7 +523,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/drobilla/zix",
-                    "commit": "8ff1b1f0bbb788034671f2e269826f5552035424",
+                    "commit": "50c73ad346fb63eb6d057dcc7d1351c95e12e83d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/drobilla%2Fzix/repository/commits/main",
@@ -584,8 +584,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ibireme/yyjson",
-                    "commit": "b21c02904188add942d3c7cd4885422e4335f115",
-                    "tag": "0.9.0",
+                    "commit": "9ddba001a4ea88e93b46932e5c5b87b222e19a5f",
+                    "tag": "0.10.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -599,8 +599,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/zenity/4.0/zenity-4.0.1.tar.xz",
-                    "sha256": "0c2f537813b10f728470d9d05d6c95713db2512f9c95096e1e85b1a6739605e6",
+                    "url": "https://download.gnome.org/sources/zenity/4.0/zenity-4.0.2.tar.xz",
+                    "sha256": "c16dcae46e29e22c2fa0b95e80e06c96b2aec93840161369c95c85ed9f093153",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "zenity"
@@ -631,8 +631,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "8d4e2e1ddba5f77dac6bdfc0b53846f0a578e793",
-                    "tag": "v1.0.0-rc.1",
+                    "commit": "6ce35f2de52f55342f0d05157cc5dc571310670c",
+                    "tag": "v1.0.0-rc.2",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
