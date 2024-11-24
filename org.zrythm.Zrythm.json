@@ -567,12 +567,12 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://git.sr.ht/~alextee/libpanel-detach",
-                    "commit": "3f77a2cc2cfc3c3c75b9cd5bd6d8174466906faf",
-                    "tag": "1.3.0-1-for-zrythm",
+                    "url": "https://github.com/GNOME/libpanel",
+                    "commit": "aeb83508b195d83454ce894c647469776c2a9356",
+                    "tag": "1.8.1",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^([\\d.-]+)-for-zrythm$"
+                        "tag-pattern": "^([\\d.-]+)$"
                     }
                 }
             ]
