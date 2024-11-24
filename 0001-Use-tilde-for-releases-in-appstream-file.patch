@@ -1,0 +1,27 @@
+From fbe3b7596e637a630a391a578baf76e4943fe092 Mon Sep 17 00:00:00 2001
+From: Vincent Chernin <38842733+vchernin@users.noreply.github.com>
+Date: Sun, 24 Nov 2024 00:02:58 -0800
+Subject: [PATCH] Use tilde for releases in appstream file As recommended by
+ appstream
+ https://www.freedesktop.org/software/appstream/docs/chap-AppStream-Misc.html#spec-vercmp-algorithm
+
+---
+ scripts/gen-appdata-xml.scm | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/scripts/gen-appdata-xml.scm b/scripts/gen-appdata-xml.scm
+index be0ccf102..9460ae9e7 100755
+--- a/scripts/gen-appdata-xml.scm
++++ b/scripts/gen-appdata-xml.scm
+@@ -73,7 +73,7 @@
+               releases-list
+               `((release
+                   (@ (date ,date)
+-                     (version ,ver)
++                     (version ,(string-replace-substring ver "-" "~"))
+                      (type "development"))
+                   (url
+                     ,(string-append
+-- 
+2.47.0
+

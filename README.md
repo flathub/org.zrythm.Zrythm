@@ -12,7 +12,7 @@ flatpak install org.zrythm.Zrythm
 This package supports Flatpak builds of LV2, LXVST, and VST3 plugins. Plugins not installed as Flatpak cannot be used.
 
 You can install Plugins using GNOME Software. Or, to view a list of installable plugins, run:
-`flatpak install org.freedesktop.LinuxAudio.Plugins//23.08 -y`
+`flatpak install org.freedesktop.LinuxAudio.Plugins//24.08 -y`
 
 ## JACK Support
 

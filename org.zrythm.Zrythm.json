@@ -1,7 +1,7 @@
 {
     "id": "org.zrythm.Zrythm",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "zrythm_launch",
     "rename-icon": "org.zrythm.Zrythm",
@@ -19,7 +19,7 @@
     "add-extensions": {
         "org.freedesktop.LinuxAudio.Plugins": {
             "directory": "extensions/Plugins",
-            "version": "23.08",
+            "version": "24.08",
             "add-ld-path": "lib",
             "merge-dirs": "ladspa;dssi;lv2;clap;vst;vst3",
             "subdirectories": true,
@@ -567,12 +567,12 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://git.sr.ht/~alextee/libpanel-detach",
-                    "commit": "3f77a2cc2cfc3c3c75b9cd5bd6d8174466906faf",
-                    "tag": "1.3.0-1-for-zrythm",
+                    "url": "https://github.com/GNOME/libpanel",
+                    "commit": "aeb83508b195d83454ce894c647469776c2a9356",
+                    "tag": "1.8.1",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^([\\d.-]+)-for-zrythm$"
+                        "tag-pattern": "^([\\d.-]+)$"
                     }
                 }
             ]
@@ -631,13 +631,17 @@
                 {
                     "type": "git",
                     "url": "https://github.com/zrythm/zrythm",
-                    "commit": "6ce35f2de52f55342f0d05157cc5dc571310670c",
-                    "tag": "v1.0.0-rc.2",
+                    "commit": "8b3de78812010e9ca6585848bdd1e15cee61e4c5",
+                    "tag": "v1.0.0",
                     "x-checker-data": {
                         "is-important": true,
                         "type": "git",
                         "tag-pattern": "^v(.*[\\d.]+)$"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Use-tilde-for-releases-in-appstream-file.patch"
                 }
             ]
         }
