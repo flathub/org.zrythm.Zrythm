@@ -638,6 +638,10 @@
                         "type": "git",
                         "tag-pattern": "^v(.*[\\d.]+)$"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-Use-tilde-for-releases-in-appstream-file.patch"
                 }
             ]
         }
