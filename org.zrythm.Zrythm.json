@@ -635,8 +635,11 @@
                     "tag": "v1.0.0",
                     "x-checker-data": {
                         "is-important": true,
-                        "type": "git",
-                        "tag-pattern": "^v(.*[\\d.]+)$"
+                        "type": "json",
+                        "url": "https://api.github.com/repos/zrythm/zrythm/releases/latest",
+                        "tag-query": ".tag_name",
+                        "version-query": "$tag | sub(\"^jq-\"; \"\")",
+                        "timestamp-query": ".published_at"
                     }
                 },
                 {
